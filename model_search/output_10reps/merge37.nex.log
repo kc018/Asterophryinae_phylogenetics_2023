@@ -1,0 +1,575 @@
+IQ-TREE multicore version 2.2.0 COVID-edition for Windows 64-bit built Jun  1 2022
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams, Ly Trong Nhan.
+
+Host:    MSI (AVX512, FMA3, 15 GB RAM)
+Command: C:\Users\Marguerite Butler\Documents\iqtree-2.2.0-Windows\bin\iqtree2.exe -s asterophryinae_20230305.phy -p merge37.nex -m TESTMERGEONLY -o UMMZ219489_Scaphiophryne_marmorata --date asterophryinae_dates.txt --date-tip 0 -mset JC,F81,K80,HKY,TN,TNe,TPM2,TPM2u,TPM3,TPM3u,TIM,TIMe,TIM2,TIM2e,TIM3,TIM3e,TVMe,TVM,SYM,GTR
+Seed:    37871 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Mon Mar 13 09:09:32 2023
+Kernel:  AVX+FMA - 1 threads (16 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 16 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading partition model file merge37.nex ...
+Reading alignment file asterophryinae_20230305.phy ... Phylip format detected
+Alignment most likely contains DNA/RNA sequences
+Constructing alignment: done in 0.0037403 secs using 417.7% CPU
+Alignment has 241 sequences with 2475 columns, 1396 distinct patterns
+951 parsimony-informative, 195 singleton sites, 1329 constant sites
+                                                 Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.000533 secs
+   1  ABTC116941_Oreophryne_A_graminis                  21.21%    passed      9.71%
+   2  BPBM47733_Choerophryne_darlingtoni_complex_sp_1    0.28%    passed     96.60%
+   3  BPBM47780_Cophixalus_cf__cryptotympanum            2.14%    passed     91.67%
+   4  BPBM47792_Hylophorbus_cf__rufescens_14            20.85%    passed     24.73%
+   5  BPBM47804_Cophixalus_darlingtoni                   5.41%    passed     98.10%
+   6  BPBM31882_Paedophryne_swiftorum_complex_sp_1      22.42%    passed     19.52%
+   7  BPBM47713_Paedophryne_amauensis                    0.08%    passed     92.53%
+   8  BPBM47786_Callulops_sp_2                           3.68%    passed     93.38%
+   9  UMMZ242263_Cophixalus_variabilis_complex_sp_1      1.25%    passed     72.08%
+  10  UMMZ242338_Liophryne_aff__dentata_1                0.00%    passed     17.75%
+  11  UMMZ242317_Hylophorbus_cf__rufescens_1             0.00%    passed     95.92%
+  12  UMMZ242212_Austrochaperina_C_aff__palmipes_1       1.70%    passed     77.36%
+  13  UMMZ242361_Mantophryne_cf__lateralis_1             0.04%    passed     85.97%
+  14  UMMZ242309_Genyophryne_aff__thomsoni_1             0.44%    passed     87.40%
+  15  UMMZ242349_Cophixalus_verrucosus_complex_sp_1      1.41%    passed     98.39%
+  16  UMMZ242404_Oreophryne_A_sp_8                       0.00%    passed     13.57%
+  17  UMMZ242232_Cophixalus_desticans_complex_sp_1       0.36%    passed     45.73%
+  18  UMMZ242226_Callulops_doriae_complex_sp_1           0.20%    passed     65.99%
+  19  FK16913_Paedophryne_titan                          0.48%    passed     19.15%
+  20  UMMZ242398_Oreophryne_B_penelopia                  0.12%    passed     94.97%
+  21  BPBM47888_Hylophorbus_cf__rufescens_13             4.24%    passed     97.91%
+  22  JAM11383_Oreophryne_B_sp_5                         1.82%    passed     81.25%
+  23  BPBM35843_Cophixalus_cf__pipilans_1                0.20%    passed     23.99%
+  24  BPBM40083_Copiula_sp_1                             1.29%    passed     78.83%
+  25  BPBM20571_Oreophryne_B_sp_2                        0.20%    passed     74.23%
+  26  BPBM22664_Austrochaperina_A_sp_1                   1.58%    passed     79.76%
+  27  BPBM20396_Mantophryne_cf__lateralis_1              0.24%    passed     94.07%
+  28  BPBM48036_Paedophryne_sp_2                        20.00%    passed     27.41%
+  29  BPBM35561_Choerophryne_gudrunae                    1.41%    passed     97.20%
+  30  BPBM40135_Mantophryne_insignis                     0.12%    passed     84.40%
+  31  BPBM39638_Hylophorbus_myopicus                     1.49%    passed    100.00%
+  32  BPBM20572_Oreophryne_B_sp_3                        5.17%    passed     95.08%
+  33  BPBM13110_Asterophrys_slateri                      0.93%    passed     34.14%
+  34  BPBM33669_Callulops_wilhelmanus                    0.20%    passed     97.12%
+  35  BPBM16554_Oreophryne_A_philosylleptoris            0.20%    passed     14.90%
+  36  BPBM20262_Copiula_sp_2                             5.86%    passed     88.13%
+  37  BPBM39000_Oreophryne_B_sp_1                        0.20%    passed     83.57%
+  38  BPBM34677_Oreophryne_A_cameroni                    5.74%    passed     47.88%
+  39  BPBM38990_Oreophryne_A_sp_2                        0.81%    passed     25.28%
+  40  BPBM16181_Hylophorbus_cf__rufescens_2              0.24%    passed     96.81%
+  41  BPBM39048_Cophixalus_sp_3                          0.69%    passed     49.47%
+  42  BPBM34688_Oreophryne_A_biroi                       0.16%    passed     28.23%
+  43  BPBM38939_Copiula_sp_7                            20.04%    passed     38.88%
+  44  BPBM22675_Choerophryne_longirostris                0.12%    passed     95.90%
+  45  BPBM18450_Hylophorbus_cf__rufescens_6              0.20%    passed     83.63%
+  46  BPBM22504_Hylophorbus_cf__rufescens_12             1.45%    passed     82.58%
+  47  BPBM39357_Oreophryne_B_sp_6                        0.32%    passed     87.01%
+  48  BPBM20522_Oreophryne_A_aurora                      0.28%    passed     94.40%
+  49  BPBM40145_Oreophryne_A_sp_6                        2.46%    passed     30.55%
+  50  BPBM39569_Hylophorbus_cf__rufescens_9              0.04%    passed     99.01%
+  51  BPBM22780_Mantophryne_cf__lateralis_3              1.25%    passed     99.39%
+  52  BPBM39007_Copiula_sp_3                            20.97%    passed     21.16%
+  53  BPBM19265_Mantophryne_cf__lateralis_4              1.29%    passed     99.16%
+  54  BPBM33763_Oreophryne_A_anamiatoi                   0.12%    passed     59.29%
+  55  BPBM22692_Cophixalus_balbus                        1.41%    passed     98.67%
+  56  BPBM39244_Oreophryne_A_sp_3                        1.58%    passed     45.36%
+  57  BPBM22689_Oreophryne_A_cf__cameroni                1.82%    passed     48.15%
+  58  BPBM18430_Cophixalus_albolineatus                  1.21%    passed     68.02%
+  59  BPBM38988_Oreophryne_B_sp_4                        2.34%    passed     83.93%
+  60  BPBM33707_Cophixalus_caverniphilus                 1.98%    passed     83.04%
+  61  BPBM39991_Choerophryne_bryonopsis                  1.70%    passed     58.86%
+  62  BPBM39631_Hylophorbus_cf__rufescens_7              0.24%    passed     98.72%
+  63  BPBM19320_Cophixalus_nexipus                       1.70%    passed     88.14%
+  64  BPBM37122_Callulops_sp_1                           0.04%    passed     91.62%
+  65  BPBM34724_Hylophorbus_atrifasciatus                0.04%    passed     90.27%
+  66  BPBM18392_Cophixalus_cheesmanae_complex_sp_1       3.07%    passed     74.80%
+  67  BPBM39929_Liophryne_miniafia                       0.00%    passed     96.69%
+  68  BPBM35866_Hylophorbus_cf__rufescens_15             0.04%    passed     95.82%
+  69  BPBM17959_Cophixalus_sp_4                          0.16%    passed     93.15%
+  70  BPBM40000_Austrochaperina_A_sp_2                   0.04%    passed     80.15%
+  71  BPBM19277_Cophixalus_iovaorum                      0.16%    passed     86.10%
+  72  BPBM19338_Hylophorbus_cf__rufescens_10             0.20%    passed     99.69%
+  73  BPBM37232_Hylophorbus_cf__rufescens_3              0.28%    passed     96.62%
+  74  BPBM38914_Barygenys_maculata                       0.12%    passed     12.44%
+  75  BPBM19371_Oreophryne_A_sp_4                        0.00%    passed     76.11%
+  76  BPBM33749_Hylophorbus_richardsi                    0.08%    passed     85.61%
+  77  BPBM18429_Cophixalus_albolineatus                  2.55%    passed     84.86%
+  78  BPBM33664_Choerophryne_darlingtoni_complex_sp_2    0.81%    passed     98.97%
+  79  BPBM34679_Choerophryne_proboscidea                 0.57%    passed     92.40%
+  80  BPBM20538_Oreophryne_B_sp_3                        0.85%    passed     99.71%
+  81  BPBM19314_Cophixalus_ateles                        2.18%    passed     96.02%
+  82  BPBM38992_Oreophryne_A_sp_2                        1.98%    passed     32.27%
+  83  BPBM39510_Oreophryne_B_phoebe                      1.54%    passed     55.11%
+  84  BPBM37718_Cophixalus_clapporum                    20.97%    passed     29.96%
+  85  BPBM39344_Oreophryne_B_sp_4                        1.25%    passed     47.08%
+  86  BPBM38904_Barygenys_apodasta                       1.62%    passed     59.40%
+  87  BPBM20126_Barygenys_aff__exsul_1                   1.78%    passed     37.71%
+  88  BPBM15814_Cophixalus_variabilis_complex_sp_2       5.17%    passed     97.34%
+  89  BPBM15708_Cophixalus_desticans_complex_sp_2        0.16%    passed     62.78%
+  90  BPBM33674_Oreophryne_A_notata                      2.79%    failed      2.69%
+  91  BPBM35692_Hylophorbus_cf__proekes                  1.78%    passed     61.14%
+  92  BPBM20141_Callulops_doriae_complex_sp_2            1.78%    passed     44.31%
+  93  BPBM17048_Hylophorbus_cf__rufescens_11             1.82%    passed     97.14%
+  94  BPBM18509_Oreophryne_A_lemur                       1.41%    passed     85.29%
+  95  BPBM33780_Xenorhina_parkerorum                     2.75%    passed     65.42%
+  96  BPBM15259_Barygenys_resima                         1.94%    passed     46.73%
+  97  BPBM20501_Oreophryne_B_meliades                    0.32%    passed     85.03%
+  98  BPBM35986_Hylophorbus_cf__rufescens_17             2.02%    passed     95.61%
+  99  BPBM27491_Cophixalus_verrucosus_complex_sp_3       1.13%    passed     84.33%
+ 100  BPBM15775_Oreophryne_B_equus                       1.45%    passed     73.73%
+ 101  BPBM15410_Mantophryne_cf__lateralis_2              1.25%    passed     97.77%
+ 102  BPBM39366_Oreophryne_A_sp_5                        1.86%    passed     85.70%
+ 103  BPBM37753_Paedophryne_dekot                        1.86%    passed     98.09%
+ 104  BPBM15707_Cophixalus_sp_5                          0.08%    passed     91.17%
+ 105  BPBM35735_Austrochaperina_B_sp_3                   0.00%    passed     96.90%
+ 106  TNHC58922_Oreophryne_B_variabilis                  3.19%    passed     63.12%
+ 107  CMNH1366_Oreophryne_A_anulata                      2.30%    passed     10.04%
+ 108  KU321316_Oreophryne_A_nana                         1.78%    passed     12.39%
+ 109  BPBM18605_Copiula_fistulans                        0.36%    passed     87.45%
+ 110  BPBM41683_Aphantophryne_B_pansa.3-Omunia_Camp      3.03%    passed     96.28%
+ 111  BPBM41681_Aphantophryne_B_pansa.3-Omunia_Camp      4.57%    passed     99.65%
+ 112  BPBM41685_Aphantophryne_B_pansa.3-Omunia_Camp      1.37%    passed     99.61%
+ 113  BPBM41682_Aphantophryne_B_pansa.3-Omunia_Camp      1.37%    passed     97.54%
+ 114  BPBM17084_Copiula_oxyrhina                         1.25%    passed     92.24%
+ 115  BPBM13862_Austrochaperina_B_macrorhyncha           0.85%    passed     96.73%
+ 116  BPBM18351_Choerophryne_gunnari                     2.26%    passed     53.45%
+ 117  BPBM20357_Genyophryne_thomsoni                     1.94%    passed     66.73%
+ 118  BPBM22740_Hylophorbus_cf__rufescens_16             1.13%    passed     95.66%
+ 119  BPBM20369_Hylophorbus_extimus                      0.85%    passed     97.27%
+ 120  BPBM22761_Hylophorbus_proekes                      0.85%    passed     97.43%
+ 121  BPBM15373_Liophryne_aff__dentata_2                 1.37%    passed     39.91%
+ 122  BPBM22754_Liophryne_schlaginhaufeni                1.13%    passed     51.23%
+ 123  BPBM20142_Mantophryne_louisiadensis                3.39%    passed     85.19%
+ 124  BPBM22511_Oreophryne_A_brachypus                   1.58%    passed     44.28%
+ 125  BPBM18510_Oreophryne_A_cf__geislerorum_1           1.17%    passed     28.30%
+ 126  BPBM17847_Choerophryne_sanguinopictus              1.66%    passed     98.81%
+ 127  BPBM16217_Oreophryne_A_inornata                    0.93%    passed     66.13%
+ 128  BPBM16546_Oreophryne_B_insulana                    2.63%    passed     77.70%
+ 129  BPBM22539_Oreophryne_A_loriae                      1.41%    passed     71.49%
+ 130  BPBM17890_Oxydactyla_crassa                        1.21%    passed     76.18%
+ 131  BPBM31477_Mantophryne_menziesi                     0.89%    passed     97.87%
+ 132  BPBM22793_Sphenophryne_cornuta                     3.64%    passed     59.94%
+ 133  BPBM22797_Xenorhina_arboricola                     0.89%    failed      3.81%
+ 134  BPBM28179_Xenorhina_mehelyi                        0.89%    passed     16.57%
+ 135  BPBM14060_Xenorhina_ocellata                       2.46%    passed     37.05%
+ 136  BPBM22795_Xenorhina_tumulus                        0.81%    passed      6.50%
+ 137  BPBM28153_Asterophrys_leucopus                     0.89%    passed     62.03%
+ 138  BPBM22649_Choerophryne_brunhildae                  0.97%    passed     90.66%
+ 139  BPBM18317_Choerophryne_exclamitans                 1.54%    passed     91.32%
+ 140  BPBM28204_Asterophrys_turpicola                    0.97%    passed     58.59%
+ 141  BPBM22665_Austrochaperina_B_basipalmata            1.62%    passed     71.00%
+ 142  BPBM22656_Austrochaperina_B_blumi                  1.29%    passed     90.00%
+ 143  BPBM22708_Copiula_tyleri                           0.04%    passed     73.77%
+ 144  BPBM22481_Austrochaperina_A_novaebritanniae        1.66%    passed     85.13%
+ 145  BPBM20112_Austrochaperina_A_yelaensis              3.84%    passed     72.30%
+ 146  BPBM15234_Austrochaperina_C_aff__palmipes_3        0.12%    passed     96.64%
+ 147  BPBM25756_Barygenys_atra                           0.85%    passed     48.58%
+ 148  BPBM25760_Barygenys_sp                             0.04%    passed     99.75%
+ 149  BPBM18504_Callulops_personatus                     0.89%    passed     99.31%
+ 150  BPBM13155_Callulops_eremnosphax                    1.62%    passed     91.58%
+ 151  BPBM20215_Cophixalus_cupricarenus                  2.51%    passed     94.82%
+ 152  BPBM20197_Cophixalus_melanops                      2.34%    passed     67.44%
+ 153  BPBM15665_Copiula_minor                            1.13%    passed     64.00%
+ 154  BPBM20287_Copiula_sp_6                            22.38%    passed     17.00%
+ 155  BPBM17827_Copiula_sp_4                             1.13%    passed     89.01%
+ 156  BPBM18388_Austrochaperina_A_parkeri                0.85%    passed     88.19%
+ 157  BPBM15355_Hylophorbus_cf__rufescens_4              1.13%    passed     85.90%
+ 158  BPBM18033_Hylophorbus_cf__rufescens_8              1.05%    passed     96.59%
+ 159  BPBM18441_Hylophorbus_cf__rufescens_12             1.45%    passed     81.97%
+ 160  BPBM18315_Liophryne_allisoni                       0.85%    passed     56.59%
+ 161  BPBM19360_Liophryne_magnitympanum                  1.29%    passed     64.61%
+ 162  BPBM20397_Mantophryne_axanthogaster                0.89%    passed     99.79%
+ 163  BPBM22784_Oreophryne_A_parkeri                    21.70%    passed     21.76%
+ 164  BPBM18128_Oreophryne_B_picticrus                   1.90%    passed     63.58%
+ 165  BPBM18002_Oreophryne_A_sp_7                        1.90%    passed     69.44%
+ 166  BPBM17980_Oreophryne_B_matawan                     6.95%    passed     80.16%
+ 167  BPBM22668_Austrochaperina_B_septentrionalis        1.86%    passed     63.65%
+ 168  BPBM22789_Oreophryne_A_parkopanorum                1.17%    passed     14.79%
+ 169  BPBM21474_Xenorhina_adisca                         1.09%    passed     37.08%
+ 170  BPBM22685_Choerophryne_rostellifer                 0.12%    passed     88.29%
+ 171  UMMZ211174_Dyscophis_antongilli                    2.18%    passed     83.90%
+ 172  UMMZ211181_Platypelis_grandis                      2.42%    passed     70.33%
+ 173  UMMZ219489_Scaphiophryne_marmorata                 0.08%    passed     78.46%
+ 174  BPBM20128_Barygenys_exsul                          0.89%    passed      8.08%
+ 175  ZMB74609_Asterophrys_senglaubi                     1.37%    passed     49.29%
+ 176  ZMB70535_Asterophrys_eurydactylus                  1.29%    passed     19.17%
+ 177  ZMB70187_Asterophrys_cf__marani                    1.58%    passed     20.48%
+ 178  ZMB63882_Asterophrys_marani                        2.63%    passed     40.93%
+ 179  ZMB70185_Asterophrys_cf__marani                    1.54%    passed     20.70%
+ 180  FK15527_Paedophryne_verrucosa                      1.49%    passed     23.45%
+ 181  BPBM39156_Oreophryne_A_sp_1                        0.81%    passed     33.48%
+ 182  BPBM19236_Callulops_bicolor                        1.54%    passed     56.74%
+ 183  BPBM35836_Callulops_microtis                       0.93%    passed     88.41%
+ 184  BPBM34741_Xenorhina_obesa                          0.85%    passed     33.97%
+ 185  BPBM20532_Oreophryne_B_sp_3                        0.89%    passed     99.80%
+ 186  BPBM15232_Austrochaperina_C_aff__palmipes_3        0.89%    passed     85.46%
+ 187  BPBM20469_Oreophryne_B_ezra                        4.16%    passed     42.92%
+ 188  BPBM33637_Choerophryne_murrita                     0.97%    passed     98.63%
+ 189  BPBM40143_Oreophryne_B_brunnea                     0.04%    passed     46.13%
+ 190  BPBM18097_Cophixalus_timidus                       1.29%    passed     86.66%
+ 191  BPBM20440_Oreophryne_B_meliades                    0.32%    passed     87.91%
+ 192  BPBM34697_Xenorhina_oxycephala                     0.00%    passed     29.14%
+ 193  BPBM16806_Callulops_robustus                       0.04%    passed     91.61%
+ 194  MB233_Cophixalus_sp_1                              2.71%    passed     72.31%
+ 195  MB291_Paedophryne_sp_1                             3.64%    passed     82.03%
+ 196  MB294_Hylophorbus_cf__rufescens_12                 0.04%    passed     87.73%
+ 197  MB300_Choerophryne_gunnari                         0.12%    passed     45.91%
+ 198  MB302_Cophixalus_sp_2                              0.00%    passed     54.48%
+ 199  MB309_Copiula_sp_5                                 2.51%    passed     68.80%
+ 200  MB327_Xenorhina_sp_1                              19.64%    passed     13.32%
+ 201  MB331_Mantophryne_cf__lateralis_4                  0.04%    passed     89.33%
+ 202  MB342_Oreophryne_A_loriae                          1.25%    passed     64.96%
+ 203  MB463_Choerophryne_sp_2                            0.44%    passed     84.86%
+ 204  MB466_Choerophryne_sp_1                            0.00%    passed     99.97%
+ 205  MB470_Cophixalus_cheesmanae_complex_sp_2           1.25%    passed     38.76%
+ 206  MB472_Choerophryne_sp_4                            0.00%    passed     58.32%
+ 207  MB475_Austrochaperina_C_aff__palmipes_4            0.00%    passed     98.74%
+ 208  MB479_Mantophryne_cf__lateralis_5                  2.91%    passed     97.41%
+ 209  MB482_Cophixalus_linnaeus                          0.24%    passed     86.36%
+ 210  MB483_Hylophorbus_cf__rufescens_5                  0.04%    passed     83.87%
+ 211  MB484_Oreophryne_A_cf__geislerorum_2               0.73%    passed     21.11%
+ 212  MB486_Paedophryne_swiftorum_complex_sp_2           6.51%    passed     29.80%
+ 213  MB508_Callulops_doriae_complex_sp_1                1.17%    passed     41.07%
+ 214  MB518_Mantophryne_cf__lateralis_1                  3.23%    passed     95.46%
+ 215  MB539_Austrochaperina_C_aff__palmipes_2            1.17%    passed     73.41%
+ 216  MB556_Hylophorbus_cf__rufescens_1                  1.25%    passed     94.69%
+ 217  MB571_Cophixalus_variabilis_complex_sp_3           0.00%    passed     93.20%
+ 218  MB583_Cophixalus_verrucosus_complex_sp_2           1.17%    passed     97.87%
+ 219  MB593_Liophryne_aff__dentata_3                     1.25%    passed     47.38%
+ 220  MB617_Cophixalus_desticans_complex_sp_1            0.00%    passed     44.78%
+ 221  MB626_Genyophryne_aff__thomsoni_2                  1.41%    passed     97.10%
+ 222  MB627_Oreophryne_B_penelopia                       1.33%    passed     80.94%
+ 223  BPBM31979_Hylophorbus_cf__rufescens_5              3.27%    passed     84.96%
+ 224  BPBM26182_Cophixalus_tomaiodactylus                1.29%    passed     98.92%
+ 225  BPBM23740_Callulops_personatus                     1.09%    passed     99.22%
+ 226  BPBM25837_Choerophryne_sp_3                        1.45%    passed     97.88%
+ 227  BPBM26194_Cophixalus_phaeobalius                   1.41%    passed     98.49%
+ 228  BPBM25754_Choerophryne_sp_4                        1.41%    passed     55.33%
+ 229  BPBM31337_Cophixalus_linnaeus                      1.37%    passed     86.18%
+ 230  BPBM31847_Cophixalus_cf__pipilans_2                0.28%    passed     71.79%
+ 231  BPBM31853_Genyophryne_aff__thomsoni_3              2.83%    passed     44.14%
+ 232  BPBM31808_Choerophryne_sp_1                        1.45%    passed     97.91%
+ 233  BPBM35367_Choerophryne_sp_4                        0.04%    passed     66.71%
+ 234  AA24862_Asterophrys_sp                             2.34%    passed     16.37%
+ 235  BPBM44363_Aphantophryne_sabini-Myola_GH            0.12%    passed     98.60%
+ 236  BPBM44369_Aphantophryne_sabini-Myola_GH            0.20%    passed     99.09%
+ 237  BPBM44373_Aphantophryne_sabini-Myola_GH            0.20%    passed     98.81%
+ 238  BJE1120_Oreophryne_A_senckenbergiana               1.29%    passed     43.70%
+ 239  BJE1143_Oreophryne_A_senckenbergiana               1.21%    passed     42.99%
+ 240  BJE1144_Oreophryne_A_senckenbergiana               1.21%    passed     42.49%
+ 241  BJE1248_Oreophryne_A_frontifasciata               21.82%    passed     75.31%
+****  TOTAL                                              2.23%  2 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: No CharPartition defined, use all CharSets
+
+Loading 15 partitions...
+Identifying sites to remove: done in 0.0003009 secs
+Identifying sites to remove: done in 0.0002551 secs
+Identifying sites to remove: done in 0.0003199 secs
+Identifying sites to remove: done in 0.0003461 secs
+Identifying sites to remove: done in 0.0002322 secs
+Identifying sites to remove: done in 0.0003361 secs
+Subset	Type	Seqs	Sites	Infor	Invar	Model	Name
+1		241	136	4	118	TESTMERGEONLY	sia_pos1
+2		241	136	0	128	TESTMERGEONLY	sia_pos2
+WARNING: No parsimony-informative sites in partition sia_pos2
+3		241	135	72	45	TESTMERGEONLY	sia_pos3
+4		241	173	78	78	TESTMERGEONLY	bdnf_pos1
+5		241	172	16	154	TESTMERGEONLY	bdnf_pos2
+6		241	172	4	163	TESTMERGEONLY	bdnf_pos3
+7		241	185	16	144	TESTMERGEONLY	nxc_pos1
+8		241	185	10	164	TESTMERGEONLY	nxc_pos2
+9		241	185	96	52	TESTMERGEONLY	nxc_pos3
+10		238	170	86	72	TESTMERGEONLY	cyb_pos1
+11		238	170	59	99	TESTMERGEONLY	cyb_pos2
+12		238	170	170	0	TESTMERGEONLY	cyb_pos3
+13		233	162	110	39	TESTMERGEONLY	nd4_pos1
+14		233	162	68	73	TESTMERGEONLY	nd4_pos2
+15		233	162	162	0	TESTMERGEONLY	nd4_pos3
+Degree of missing data: 0.009
+Info: multi-threading strategy over partitions
+
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.083 seconds
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Initial log-likelihood: -98262.999
+Current log-likelihood at step 1: -83960.970
+Current log-likelihood at step 2: -83388.099
+Current log-likelihood at step 3: -83331.101
+Current log-likelihood at step 4: -83276.243
+Current log-likelihood at step 5: -83261.568
+Current log-likelihood at step 6: -83259.001
+Parameters optimization took 5 rounds (6.844 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+Perform nearest neighbor interchange...
+Optimizing NNI: done in 2.30836 secs using 100.2% CPU
+Estimate model parameters (epsilon = 1.000)
+Initial log-likelihood: -83093.784
+Current log-likelihood at step 1: -83090.141
+Current log-likelihood at step 2: -83088.967
+Current log-likelihood at step 3: -83086.999
+Current log-likelihood at step 4: -83086.468
+Partition-specific rates:  0.326 0.243 1.091 0.480 0.212 0.604 0.533 0.374 0.433 1.469 0.622 2.740 2.458 0.796 2.658
+Parameters optimization took 3 rounds (2.524 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+Time for fast ML tree search: 11.698 seconds
+
+NOTE: ModelFinder requires 5 MB RAM!
+Selecting individual models for 15 charsets using BIC...
+ No. Model        Score       TreeLen     Charset
+   1 GTR+F+I+G4   1091.365    2.089       sia_pos1
+   2 GTR+F+I+G4   634.793     1.418       sia_pos2
+   3 GTR+F+I+G4   6857.652    7.642       sia_pos3
+   4 GTR+F+I+G4   5848.610    3.366       bdnf_pos1
+   5 GTR+F+I+G4   1596.028    0.730       bdnf_pos2
+   6 GTR+F+I+G4   838.723     4.080       bdnf_pos3
+   7 GTR+F+I+G4   2077.306    0.910       nxc_pos1
+   8 GTR+F+I+G4   1636.655    2.612       nxc_pos2
+   9 GTR+F+I+G4   6772.179    3.029       nxc_pos3
+  10 GTR+F+I+G4   13665.320   10.176      cyb_pos1	0h:0m:0s (0h:0m:13s left)
+  11 GTR+F+I+G4   5632.203    4.306       cyb_pos2	0h:0m:0s (0h:0m:12s left)
+  12 GTR+F+ASC+G4 49924.777   19.008      cyb_pos3	0h:0m:0s (0h:0m:12s left)
+  13 GTR+F+I+G4   16879.718   16.910      nd4_pos1	0h:0m:0s (0h:0m:11s left)
+  14 GTR+F+I+G4   6963.127    5.480       nd4_pos2	0h:0m:0s (0h:0m:11s left)
+  15 GTR+F+ASC+G4 46529.010   18.306      nd4_pos3	0h:0m:0s (0h:0m:11s left)
+Full partition model BIC score: 171124.847 (LnL: -83058.038  df:641)
+Merging models to increase model fit (about 211 total partition schemes)...
+  16 GTR+F+I+G4   171043.905  0.507       sia_pos1+sia_pos2	0h:0m:1s (0h:0m:14s left)
+  17 GTR+F+I+G4   171144.633  4.324       sia_pos1+sia_pos3	0h:0m:1s (0h:0m:17s left)
+  18 GTR+F+I+G4   171103.266  2.172       sia_pos1+bdnf_pos1	0h:0m:1s (0h:0m:18s left)
+  19 GTR+F+I+G4   171064.481  0.710       sia_pos1+bdnf_pos2	0h:0m:2s (0h:0m:20s left)
+  20 GTR+F+I+G4   171037.758  0.519       sia_pos1+bdnf_pos3	0h:0m:3s (0h:0m:28s left)
+  21 GTR+F+I+G4   171062.352  0.756       sia_pos1+nxc_pos1	0h:0m:3s (0h:0m:29s left)
+  22 GTR+F+I+G4   171082.488  2.035       sia_pos1+nxc_pos2	0h:0m:3s (0h:0m:31s left)
+  23 GTR+F+I+G4   171159.849  1.990       sia_pos1+nxc_pos3	0h:0m:3s (0h:0m:32s left)
+  24 GTR+F+I+G4   171138.767  6.983       sia_pos1+cyb_pos1	0h:0m:4s (0h:0m:34s left)
+  25 GTR+F+I+G4   171090.472  2.726       sia_pos1+cyb_pos2	0h:0m:4s (0h:0m:35s left)
+  26 GTR+F+I+G4   171583.616  39.262      sia_pos1+cyb_pos3	0h:0m:5s (0h:0m:37s left)
+  27 GTR+F+I+G4   171215.623  11.091      sia_pos1+nd4_pos1	0h:0m:5s (0h:0m:38s left)
+  28 GTR+F+I+G4   171142.032  3.522       sia_pos1+nd4_pos2	0h:0m:5s (0h:0m:38s left)
+  29 GTR+F+I+G4   171755.905  31.063      sia_pos1+nd4_pos3	0h:0m:6s (0h:0m:40s left)
+  30 GTR+F+I+G4   171186.546  4.271       sia_pos2+sia_pos3	0h:0m:6s (0h:0m:41s left)
+  31 GTR+F+I+G4   171145.096  2.029       sia_pos2+bdnf_pos1	0h:0m:7s (0h:0m:41s left)
+  32 GTR+F+I+G4   171078.074  0.529       sia_pos2+bdnf_pos2	0h:0m:7s (0h:0m:41s left)
+  33 GTR+F+I+G4   171056.201  3.646       sia_pos2+bdnf_pos3	0h:0m:7s (0h:0m:40s left)
+  34 GTR+F+I+G4   171081.497  0.654       sia_pos2+nxc_pos1	0h:0m:7s (0h:0m:40s left)
+  35 GTR+F+I+G4   171058.757  2.048       sia_pos2+nxc_pos2	0h:0m:8s (0h:0m:40s left)
+  36 GTR+F+I+G4   171215.291  1.840       sia_pos2+nxc_pos3	0h:0m:8s (0h:0m:41s left)
+  37 GTR+F+I+G4   171164.340  6.202       sia_pos2+cyb_pos1	0h:0m:8s (0h:0m:41s left)
+  38 GTR+F+I+G4   171126.306  2.423       sia_pos2+cyb_pos2	0h:0m:9s (0h:0m:41s left)
+  39 GTR+F+I+G4   171485.149  38.596      sia_pos2+cyb_pos3	0h:0m:9s (0h:0m:42s left)
+  40 GTR+F+I+G4   171246.301  10.097      sia_pos2+nd4_pos1	0h:0m:10s (0h:0m:43s left)
+  41 GTR+F+I+G4   171185.979  3.228       sia_pos2+nd4_pos2	0h:0m:10s (0h:0m:43s left)
+  42 GTR+F+I+G4   171658.751  30.775      sia_pos2+nd4_pos3	0h:0m:10s (0h:0m:43s left)
+  43 GTR+F+I+G4   171085.577  6.158       sia_pos3+bdnf_pos1	0h:0m:11s (0h:0m:43s left)
+  44 GTR+F+I+G4   171310.017  3.988       sia_pos3+bdnf_pos2	0h:0m:11s (0h:0m:44s left)
+  45 GTR+F+I+G4   171220.409  3.932       sia_pos3+bdnf_pos3	0h:0m:12s (0h:0m:44s left)
+  46 GTR+F+I+G4   171298.061  4.220       sia_pos3+nxc_pos1	0h:0m:12s (0h:0m:44s left)
+  47 GTR+F+I+G4   171213.465  4.665       sia_pos3+nxc_pos2	0h:0m:12s (0h:0m:44s left)
+  48 GTR+F+I+G4   171159.530  6.621       sia_pos3+nxc_pos3	0h:0m:13s (0h:0m:44s left)
+  49 GTR+F+I+G4   171173.758  11.317      sia_pos3+cyb_pos1	0h:0m:13s (0h:0m:45s left)
+  50 GTR+F+I+G4   171232.194  6.120       sia_pos3+cyb_pos2	0h:0m:14s (0h:0m:45s left)
+  51 GTR+F+I+G4   171795.474  53.181      sia_pos3+cyb_pos3	0h:0m:14s (0h:0m:46s left)
+  52 GTR+F+I+G4   171226.955  16.278      sia_pos3+nd4_pos1	0h:0m:15s (0h:0m:47s left)
+  53 GTR+F+I+G4   171212.939  6.369       sia_pos3+nd4_pos2	0h:0m:15s (0h:0m:47s left)
+  54 GTR+F+I+G4   171952.745  28.839      sia_pos3+nd4_pos3	0h:0m:16s (0h:0m:47s left)
+  55 GTR+F+I+G4   171228.678  1.951       bdnf_pos1+bdnf_pos2	0h:0m:16s (0h:0m:47s left)
+  56 GTR+F+I+G4   171159.047  1.747       bdnf_pos1+bdnf_pos3	0h:0m:16s (0h:0m:46s left)
+  57 GTR+F+I+G4   171191.887  2.210       bdnf_pos1+nxc_pos1	0h:0m:17s (0h:0m:46s left)
+  58 GTR+F+I+G4   171202.346  2.783       bdnf_pos1+nxc_pos2	0h:0m:17s (0h:0m:46s left)
+  59 GTR+F+I+G4   171080.752  3.413       bdnf_pos1+nxc_pos3	0h:0m:17s (0h:0m:46s left)
+  60 GTR+F+I+G4   171163.962  9.485       bdnf_pos1+cyb_pos1	0h:0m:18s (0h:0m:46s left)
+  61 GTR+F+I+G4   171162.845  3.903       bdnf_pos1+cyb_pos2	0h:0m:18s (0h:0m:46s left)
+  62 GTR+F+I+G4   171790.380  48.938      bdnf_pos1+cyb_pos3	0h:0m:19s (0h:0m:47s left)
+  63 GTR+F+I+G4   171239.717  14.339      bdnf_pos1+nd4_pos1	0h:0m:20s (0h:0m:47s left)
+  64 GTR+F+I+G4   171193.519  4.827       bdnf_pos1+nd4_pos2	0h:0m:20s (0h:0m:47s left)
+  65 GTR+F+I+G4   172012.694  35.306      bdnf_pos1+nd4_pos3	0h:0m:21s (0h:0m:47s left)
+  66 GTR+F+I+G4   171057.121  0.562       bdnf_pos2+bdnf_pos3	0h:0m:21s (0h:0m:47s left)
+  67 GTR+F+I+G4   171080.938  0.754       bdnf_pos2+nxc_pos1	0h:0m:21s (0h:0m:46s left)
+  68 GTR+F+I+G4   171163.944  2.527       bdnf_pos2+nxc_pos2	0h:0m:21s (0h:0m:45s left)
+  69 GTR+F+I+G4   171273.087  2.033       bdnf_pos2+nxc_pos3	0h:0m:22s (0h:0m:45s left)
+  70 GTR+F+I+G4   171268.565  6.711       bdnf_pos2+cyb_pos1	0h:0m:22s (0h:0m:45s left)
+  71 GTR+F+I+G4   171219.346  2.329       bdnf_pos2+cyb_pos2	0h:0m:23s (0h:0m:45s left)
+  72 GTR+F+I+G4   171852.459  31.147      bdnf_pos2+cyb_pos3	0h:0m:23s (0h:0m:45s left)
+  73 GTR+F+I+G4   171339.279  9.636       bdnf_pos2+nd4_pos1	0h:0m:23s (0h:0m:45s left)
+  74 GTR+F+I+G4   171287.476  3.000       bdnf_pos2+nd4_pos2	0h:0m:24s (0h:0m:44s left)
+  75 GTR+F+I+G4   171963.337  30.442      bdnf_pos2+nd4_pos3	0h:0m:24s (0h:0m:44s left)
+  76 GTR+F+I+G4   171070.465  0.660       bdnf_pos3+nxc_pos1	0h:0m:24s (0h:0m:44s left)
+  77 GTR+F+I+G4   171058.742  1.800       bdnf_pos3+nxc_pos2	0h:0m:25s (0h:0m:43s left)
+  78 GTR+F+I+G4   171226.488  1.613       bdnf_pos3+nxc_pos3	0h:0m:25s (0h:0m:43s left)
+  79 GTR+F+I+G4   171178.369  5.426       bdnf_pos3+cyb_pos1	0h:0m:26s (0h:0m:43s left)
+  80 GTR+F+I+G4   171126.897  2.082       bdnf_pos3+cyb_pos2	0h:0m:26s (0h:0m:43s left)
+  81 GTR+F+I+G4   171541.257  33.867      bdnf_pos3+cyb_pos3	0h:0m:27s (0h:0m:43s left)
+  82 GTR+F+I+G4   171269.096  8.607       bdnf_pos3+nd4_pos1	0h:0m:27s (0h:0m:43s left)
+  83 GTR+F+I+G4   171215.848  2.730       bdnf_pos3+nd4_pos2	0h:0m:27s (0h:0m:43s left)
+  84 GTR+F+I+G4   171721.535  28.847      bdnf_pos3+nd4_pos3	0h:0m:28s (0h:0m:43s left)
+  85 GTR+F+I+G4   171182.420  2.369       nxc_pos1+nxc_pos2	0h:0m:28s (0h:0m:42s left)
+  86 GTR+F+I+G4   171222.810  1.878       nxc_pos1+nxc_pos3	0h:0m:29s (0h:0m:42s left)
+  87 GTR+F+I+G4   171333.937  11.686      nxc_pos1+cyb_pos1	0h:0m:29s (0h:0m:42s left)
+  88 GTR+F+I+G4   171203.707  2.450       nxc_pos1+cyb_pos2	0h:0m:29s (0h:0m:41s left)
+  89 GTR+F+I+G4   172016.240  36.247      nxc_pos1+cyb_pos3	0h:0m:30s (0h:0m:41s left)
+  90 GTR+F+I+G4   171369.633  10.297      nxc_pos1+nd4_pos1	0h:0m:30s (0h:0m:41s left)
+  91 GTR+F+I+G4   171254.473  3.137       nxc_pos1+nd4_pos2	0h:0m:31s (0h:0m:41s left)
+  92 GTR+F+I+G4   172209.124  31.035      nxc_pos1+nd4_pos3	0h:0m:32s (0h:0m:41s left)
+  93 GTR+F+I+G4   171304.454  2.428       nxc_pos2+nxc_pos3	0h:0m:32s (0h:0m:41s left)
+  94 GTR+F+I+G4   171194.497  5.601       nxc_pos2+cyb_pos1	0h:0m:32s (0h:0m:40s left)
+  95 GTR+F+I+G4   171227.494  3.069       nxc_pos2+cyb_pos2	0h:0m:33s (0h:0m:40s left)
+  96 GTR+F+I+G4   171685.819  33.832      nxc_pos2+cyb_pos3	0h:0m:33s (0h:0m:40s left)
+  97 GTR+F+I+G4   171299.662  8.298       nxc_pos2+nd4_pos1	0h:0m:34s (0h:0m:40s left)
+  98 GTR+F+I+G4   171316.443  3.313       nxc_pos2+nd4_pos2	0h:0m:34s (0h:0m:39s left)
+  99 GTR+F+I+G4   171903.813  27.586      nxc_pos2+nd4_pos3	0h:0m:35s (0h:0m:39s left)
+ 100 GTR+F+I+G4   171211.943  10.869      nxc_pos3+cyb_pos1	0h:0m:35s (0h:0m:39s left)
+ 101 GTR+F+I+G4   171177.306  4.369       nxc_pos3+cyb_pos2	0h:0m:36s (0h:0m:39s left)
+ 102 GTR+F+I+G4   171969.465  26.593      nxc_pos3+cyb_pos3	0h:0m:36s (0h:0m:39s left)
+ 103 GTR+F+I+G4   171256.306  14.909      nxc_pos3+nd4_pos1	0h:0m:37s (0h:0m:38s left)
+ 104 GTR+F+I+G4   171204.894  5.618       nxc_pos3+nd4_pos2	0h:0m:37s (0h:0m:38s left)
+ 105 GTR+F+I+G4   172040.504  24.211      nxc_pos3+nd4_pos3	0h:0m:38s (0h:0m:38s left)
+ 106 GTR+F+I+G4   171192.964  8.158       cyb_pos1+cyb_pos2	0h:0m:38s (0h:0m:38s left)
+ 107 GTR+F+I+G4   171448.171  48.867      cyb_pos1+cyb_pos3	0h:0m:39s (0h:0m:38s left)
+ 108 GTR+F+I+G4   171078.350  14.959      cyb_pos1+nd4_pos1	0h:0m:39s (0h:0m:38s left)
+ 109 GTR+F+I+G4   171262.124  9.383       cyb_pos1+nd4_pos2	0h:0m:40s (0h:0m:37s left)
+ 110 GTR+F+I+G4   171623.916  37.056      cyb_pos1+nd4_pos3	0h:0m:41s (0h:0m:37s left)
+ 111 GTR+F+I+G4   171572.945  47.572      cyb_pos2+cyb_pos3	0h:0m:41s (0h:0m:37s left)
+ 112 GTR+F+I+G4   171293.914  12.010      cyb_pos2+nd4_pos1	0h:0m:42s (0h:0m:37s left)
+ 113 GTR+F+I+G4   171082.537  4.717       cyb_pos2+nd4_pos2	0h:0m:42s (0h:0m:37s left)
+ 114 GTR+F+I+G4   171773.828  32.642      cyb_pos2+nd4_pos3	0h:0m:43s (0h:0m:36s left)
+ 115 GTR+F+I+G4   171293.413  53.840      cyb_pos3+nd4_pos1	0h:0m:43s (0h:0m:36s left)
+ 116 GTR+F+I+G4   171674.865  28.738      cyb_pos3+nd4_pos2	0h:0m:44s (0h:0m:36s left)
+ 117 GTR+F+ASC+G4 171149.240  18.873      cyb_pos3+nd4_pos3	0h:0m:46s (0h:0m:37s left)
+ 118 GTR+F+I+G4   171349.771  13.728      nd4_pos1+nd4_pos2	0h:0m:46s (0h:0m:36s left)
+ 119 GTR+F+I+G4   171455.847  42.033      nd4_pos1+nd4_pos3	0h:0m:47s (0h:0m:36s left)
+ 120 GTR+F+I+G4   171872.522  32.604      nd4_pos2+nd4_pos3	0h:0m:48s (0h:0m:36s left)
+6 compatible better partition pairs found
+Merging sia_pos1+bdnf_pos3 with BIC score: 171037.758 (LnL: -83057.471  df: 630)
+Merging sia_pos2+nxc_pos2 with BIC score: 170971.669 (LnL: -83067.403  df: 619)
+Merging cyb_pos1+nd4_pos1 with BIC score: 170925.171 (LnL: -83087.131  df: 608)
+Merging bdnf_pos1+nxc_pos3 with BIC score: 170881.077 (LnL: -83108.061  df: 597)
+Merging bdnf_pos2+nxc_pos1 with BIC score: 170837.168 (LnL: -83129.083  df: 586)
+Merging cyb_pos2+nd4_pos2 with BIC score: 170794.858 (LnL: -83150.905  df: 575)
+ 121 GTR+F+I+G4   170772.622  1.237       sia_pos1+sia_pos2+bdnf_pos3+nxc_pos2	0h:0m:49s (0h:0m:36s left)
+ 122 GTR+F+I+G4   170928.516  3.042       sia_pos1+sia_pos3+bdnf_pos3	0h:0m:49s (0h:0m:36s left)
+ 123 GTR+F+I+G4   170955.687  1.943       sia_pos1+bdnf_pos1+bdnf_pos3+nxc_pos3	0h:0m:50s (0h:0m:35s left)
+ 124 GTR+F+I+G4   170757.253  0.633       sia_pos1+bdnf_pos2+bdnf_pos3+nxc_pos1	0h:0m:50s (0h:0m:35s left)
+ 125 GTR+F+I+G4   171030.604  8.466       sia_pos1+bdnf_pos3+cyb_pos1+nd4_pos1	0h:0m:50s (0h:0m:35s left)
+ 126 GTR+F+I+G4   170909.782  2.723       sia_pos1+bdnf_pos3+cyb_pos2+nd4_pos2	0h:0m:51s (0h:0m:34s left)
+ 127 GTR+F+I+G4   171570.689  25.903      sia_pos1+bdnf_pos3+cyb_pos3	0h:0m:51s (0h:0m:34s left)
+ 128 GTR+F+I+G4   171743.648  21.330      sia_pos1+bdnf_pos3+nd4_pos3	0h:0m:52s (0h:0m:34s left)
+ 129 GTR+F+I+G4   170927.549  3.560       sia_pos2+sia_pos3+nxc_pos2	0h:0m:53s (0h:0m:33s left)
+ 130 GTR+F+I+G4   171046.965  2.267       sia_pos2+bdnf_pos1+nxc_pos2+nxc_pos3	0h:0m:53s (0h:0m:33s left)
+ 131 GTR+F+I+G4   170895.955  0.999       sia_pos2+bdnf_pos2+nxc_pos1+nxc_pos2	0h:0m:53s (0h:0m:32s left)
+ 132 GTR+F+I+G4   171055.573  7.736       sia_pos2+nxc_pos2+cyb_pos1+nd4_pos1	0h:0m:54s (0h:0m:32s left)
+ 133 GTR+F+I+G4   171044.526  2.832       sia_pos2+nxc_pos2+cyb_pos2+nd4_pos2	0h:0m:55s (0h:0m:32s left)
+ 134 GTR+F+I+G4   171644.035  26.656      sia_pos2+nxc_pos2+cyb_pos3	0h:0m:55s (0h:0m:31s left)
+ 135 GTR+F+I+G4   171809.967  20.898      sia_pos2+nxc_pos2+nd4_pos3	0h:0m:56s (0h:0m:31s left)
+ 136 GTR+F+I+G4   170828.533  5.717       sia_pos3+bdnf_pos1+nxc_pos3	0h:0m:56s (0h:0m:31s left)
+ 137 GTR+F+I+G4   171093.082  2.771       sia_pos3+bdnf_pos2+nxc_pos1	0h:0m:57s (0h:0m:30s left)
+ 138 GTR+F+I+G4   170886.479  14.644      sia_pos3+cyb_pos1+nd4_pos1	0h:0m:57s (0h:0m:30s left)
+ 139 GTR+F+I+G4   170954.333  5.786       sia_pos3+cyb_pos2+nd4_pos2	0h:0m:58s (0h:0m:30s left)
+ 140 GTR+F+I+G4   171043.222  2.059       bdnf_pos1+bdnf_pos2+nxc_pos1+nxc_pos3	0h:0m:58s (0h:0m:29s left)
+ 141 GTR+F+I+G4   171040.082  11.971      bdnf_pos1+nxc_pos3+cyb_pos1+nd4_pos1	0h:0m:59s (0h:0m:29s left)
+ 142 GTR+F+I+G4   170947.550  4.688       bdnf_pos1+nxc_pos3+cyb_pos2+nd4_pos2	0h:1m:0s (0h:0m:29s left)
+ 143 GTR+F+I+G4   172008.725  22.141      bdnf_pos1+nxc_pos3+cyb_pos3	0h:1m:1s (0h:0m:29s left)
+ 144 GTR+F+I+G4   172092.201  19.989      bdnf_pos1+nxc_pos3+nd4_pos3	0h:1m:2s (0h:0m:29s left)
+ 145 GTR+F+I+G4   171216.063  8.568       bdnf_pos2+nxc_pos1+cyb_pos1+nd4_pos1	0h:1m:3s (0h:0m:28s left)
+ 146 GTR+F+I+G4   171060.616  2.712       bdnf_pos2+nxc_pos1+cyb_pos2+nd4_pos2	0h:1m:3s (0h:0m:28s left)
+ 147 GTR+F+I+G4   172018.934  23.039      bdnf_pos2+nxc_pos1+cyb_pos3	0h:1m:4s (0h:0m:28s left)
+ 148 GTR+F+I+G4   172161.158  22.898      bdnf_pos2+nxc_pos1+nd4_pos3	0h:1m:5s (0h:0m:27s left)
+ 149 GTR+F+I+G4   171141.963  10.656      cyb_pos1+cyb_pos2+nd4_pos1+nd4_pos2	0h:1m:6s (0h:0m:27s left)
+ 150 GTR+F+I+G4   171322.131  43.742      cyb_pos1+cyb_pos3+nd4_pos1	0h:1m:7s (0h:0m:27s left)
+ 151 GTR+F+I+G4   171444.106  34.055      cyb_pos1+nd4_pos1+nd4_pos3	0h:1m:8s (0h:0m:27s left)
+ 152 GTR+F+I+G4   171721.465  23.359      cyb_pos2+cyb_pos3+nd4_pos2	0h:1m:8s (0h:0m:26s left)
+ 153 GTR+F+I+G4   171898.984  25.074      cyb_pos2+nd4_pos2+nd4_pos3	0h:1m:9s (0h:0m:26s left)
+Merging sia_pos1+bdnf_pos2+bdnf_pos3+nxc_pos1 with BIC score: 170757.253 (LnL: -83175.080  df: 564)
+ 154 GTR+F+I+G4   170843.588  0.784       sia_pos1+sia_pos2+bdnf_pos2+bdnf_pos3+nxc_pos1+nxc_pos2	0h:1m:10s (0h:0m:26s left)
+ 155 GTR+F+I+G4   171101.572  2.042       sia_pos1+sia_pos3+bdnf_pos2+bdnf_pos3+nxc_pos1	0h:1m:10s (0h:0m:25s left)
+ 156 GTR+F+I+G4   171085.113  1.520       sia_pos1+bdnf_pos1+bdnf_pos2+bdnf_pos3+nxc_pos1+nxc_pos3	0h:1m:11s (0h:0m:25s left)
+ 157 GTR+F+I+G4   171298.271  6.473       sia_pos1+bdnf_pos2+bdnf_pos3+nxc_pos1+cyb_pos1+nd4_pos1	0h:1m:12s (0h:0m:24s left)
+ 158 GTR+F+I+G4   171073.996  2.084       sia_pos1+bdnf_pos2+bdnf_pos3+nxc_pos1+cyb_pos2+nd4_pos2	0h:1m:13s (0h:0m:24s left)
+ 159 GTR+F+I+G4   172195.423  16.429      sia_pos1+bdnf_pos2+bdnf_pos3+nxc_pos1+cyb_pos3	0h:1m:14s (0h:0m:24s left)
+ 160 GTR+F+I+G4   172324.201  16.345      sia_pos1+bdnf_pos2+bdnf_pos3+nxc_pos1+nd4_pos3	0h:1m:15s (0h:0m:23s left)
+Agglomerative model selection: (((sia_pos1,bdnf_pos3)1:171038,(bdnf_pos2,nxc_pos1)5:170837)7:170757,(sia_pos2,nxc_pos2)2:170972,sia_pos3,(bdnf_pos1,nxc_pos3)4:170881,(cyb_pos1,nd4_pos1)3:170925,(cyb_pos2,nd4_pos2)6:170795,cyb_pos3,nd4_pos3)
+Merging into 8 partitions...
+ 161 SYM+I+G4     5535.730    sia_pos1+bdnf_pos2+bdnf_pos3+nxc_pos1	0h:1m:16s (0h:0m:23s left)
+ 162 TIM3e+I+G4   2238.469    sia_pos2+nxc_pos2	0h:1m:19s (0h:0m:23s left)
+ 163 TN+F+I+G4    6843.606    sia_pos3	0h:1m:23s (0h:0m:24s left)
+ 164 TNe+I+G4     12587.969   bdnf_pos1+nxc_pos3	0h:1m:28s (0h:0m:25s left)
+ 165 GTR+F+I+G4   30535.893   cyb_pos1+nd4_pos1	0h:1m:31s (0h:0m:25s left)
+ 166 GTR+F+I+G4   12590.373   cyb_pos2+nd4_pos2	0h:1m:34s (0h:0m:25s left)
+ 167 TIM2+F+ASC+G4 49375.140   cyb_pos3	0h:1m:41s (0h:0m:26s left)
+ 168 TN+F+ASC     46512.585   nd4_pos3	0h:1m:46s (0h:0m:27s left)
+Best partition model BIC score: 170092.541 (LnL: -82932.585  df:541)
+Partition information was printed to merge37.nex.best_scheme.nex
+Partition information in Raxml format was printed to merge37.nex.best_scheme
+
+All model information printed to merge37.nex.model.gz
+CPU time for ModelFinder: 118.109 seconds (0h:1m:58s)
+Wall-clock time for ModelFinder: 118.802 seconds (0h:1m:58s)
+
+NOTE: 43 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.010)
+Initial log-likelihood: -82963.173
+Current log-likelihood at step 1: -82926.771
+Current log-likelihood at step 2: -82926.404
+Current log-likelihood at step 3: -82926.355
+Current log-likelihood at step 4: -82926.324
+Current log-likelihood at step 5: -82926.313
+Current log-likelihood at step 6: -82926.296
+Current log-likelihood at step 7: -82926.289
+Partition-specific rates:  0.043 0.118 0.516 0.231 0.999 0.316 5.946 4.993
+Parameters optimization took 6 rounds (2.041 sec)
+
+Wrote distance file to... 
+Partition information was printed to merge37.nex.best_model.nex
+BEST SCORE FOUND : -82926.289
+Total tree length: 15.018
+
+Total number of iterations: 0
+CPU time used for tree search: 0.000 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.000 sec (0h:0m:0s)
+Total CPU time used: 2.062 sec (0h:0m:2s)
+Total wall-clock time used: 2.084 sec (0h:0m:2s)
+
+Analysis results written to: 
+  IQ-TREE report:                merge37.nex.iqtree
+  Tree used for ModelFinder:     merge37.nex.treefile
+  Best partitioning scheme:      merge37.nex.best_scheme.nex
+           in RAxML format:      merge37.nex.best_scheme
+  Screen log file:               merge37.nex.log
+
+--- Start phylogenetic dating ---
+Reading date file asterophryinae_dates.txt ...
+5 dates extracted
+Building time tree by least-square dating (LSD) with command:
+lsd -i merge37.nex.timetree.subst -s 2475 -o merge37.nex.timetree -g merge37.nex.timetree.outgroup -d merge37.nex.timetree.date -z 0 
+Reroot the tree(s) using given outgroups ...
+
+TREE 1
+*PROCESSING:
+Reading the tree ... 
+Collapse 1 (over 239) internal branches having branch length <= 0.000202
+ (settable via option -l)
+Parameter to adjust variances was set to 0.0205 (settable via option -b)
+Minimum branch length of time scaled tree (settable via option -u and -U): 0
+Estimating the root position on the branch defined by given outgroups ...
+
+*RESULTS:
+- Dating results:
+ rate 0.00738226, tMRCA -29.1723 , objective function 1.16254
+
+TOTAL ELAPSED TIME: 0.008 seconds
+LSD results written to:
+  LSD report:                  merge37.nex.timetree.lsd
+  Time tree in nexus format:   merge37.nex.timetree.nex
+  Time tree in newick format:  merge37.nex.timetree.nwk
+
+--- End phylogenetic dating ---
+Date and Time: Mon Mar 13 09:11:33 2023
