@@ -3,9 +3,9 @@ Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
 Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams, Ly Trong Nhan.
 
 Host:    MSI (AVX512, FMA3, 15 GB RAM)
-Command: C:\Users\Marguerite Butler\Documents\iqtree-2.2.0-Windows\bin\iqtree2.exe -s asterophryinae_20230305.phy -p nomerge08.nex.best_scheme.nex -B 1000 -o UMMZ219489_Scaphiophryne_marmorata --date asterophryinae_dates.txt --date-tip 0 -mset JC,F81,K80,HKY,TN,TNe,TPM2,TPM2u,TPM3,TPM3u,TIM,TIMe,TIM2,TIM2e,TIM3,TIM3e,TVMe,TVM,SYM,GTR
-Seed:    261954 (Using SPRNG - Scalable Parallel Random Number Generator)
-Time:    Thu Mar 23 12:49:33 2023
+Command: C:\Users\Marguerite Butler\Documents\iqtree-2.2.0-Windows\bin\iqtree2.exe -s asterophryinae_20230305.phy -p nomerge08.nex.best_scheme.nex -B 1000 -o UMMZ219489_Scaphiophryne_marmorata --date asterophryinae_dates.txt --date-tip 0 -redo
+Seed:    551384 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Thu Mar 23 13:37:36 2023
 Kernel:  AVX+FMA - 1 threads (16 CPU cores detected)
 
 HINT: Use -nt option to specify number of threads because your CPU has 16 cores!
@@ -14,11 +14,11 @@ HINT: -nt AUTO will automatically determine the best number of threads to use.
 Reading partition model file nomerge08.nex.best_scheme.nex ...
 Reading alignment file asterophryinae_20230305.phy ... Phylip format detected
 Alignment most likely contains DNA/RNA sequences
-Constructing alignment: done in 0.0049664 secs
+Constructing alignment: done in 0.0043704 secs
 Alignment has 241 sequences with 2475 columns, 1396 distinct patterns
 951 parsimony-informative, 195 singleton sites, 1329 constant sites
                                                  Gap/Ambiguity  Composition  p-value
-Analyzing sequences: done in 0.0010862 secs
+Analyzing sequences: done in 0.0010973 secs
    1  ABTC116941_Oreophryne_A_graminis                  21.21%    passed      9.71%
    2  BPBM47733_Choerophryne_darlingtoni_complex_sp_1    0.28%    passed     96.60%
    3  BPBM47780_Cophixalus_cf__cryptotympanum            2.14%    passed     91.67%
@@ -263,12 +263,12 @@ Analyzing sequences: done in 0.0010862 secs
 ****  TOTAL                                              2.23%  2 sequences failed composition chi2 test (p-value<5%; df=3)
 
 Loading 15 partitions...
-Identifying sites to remove: done in 0.0003555 secs
-Identifying sites to remove: done in 0.0002615 secs
-Identifying sites to remove: done in 0.0003679 secs
-Identifying sites to remove: done in 0.0003471 secs
-Identifying sites to remove: done in 0.0004191 secs
-Identifying sites to remove: done in 0.0003546 secs
+Identifying sites to remove: done in 0.000452 secs
+Identifying sites to remove: done in 0.0002722 secs
+Identifying sites to remove: done in 0.0003568 secs
+Identifying sites to remove: done in 0.0003724 secs
+Identifying sites to remove: done in 0.0003042 secs
+Identifying sites to remove: done in 0.0003423 secs
 Subset	Type	Seqs	Sites	Infor	Invar	Model	Name
 1	DNA	241	136	4	118	TNe+I+G4	sia_pos1
 2	DNA	241	136	0	128	JC+I+G4	sia_pos2
@@ -290,580 +290,754 @@ Degree of missing data: 0.009
 Info: multi-threading strategy over partitions
 
 
-Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.060 seconds
-Generating 1000 samples for ultrafast bootstrap (seed: 261954)...
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.069 seconds
+Generating 1000 samples for ultrafast bootstrap (seed: 551384)...
 
 NOTE: 55 MB RAM (0 GB) is required!
 Estimate model parameters (epsilon = 0.100)
-Initial log-likelihood: -98335.088
-Current log-likelihood at step 1: -85196.364
-Current log-likelihood at step 2: -83892.233
-Current log-likelihood at step 3: -83830.053
-Current log-likelihood at step 4: -83782.200
-Current log-likelihood at step 5: -83740.240
-Current log-likelihood at step 6: -83729.848
-Current log-likelihood at step 7: -83725.668
-Current log-likelihood at step 8: -83722.539
-Current log-likelihood at step 9: -83719.610
-Current log-likelihood at step 10: -83716.739
-Current log-likelihood at step 11: -83713.838
-Current log-likelihood at step 12: -83710.799
-Current log-likelihood at step 13: -83696.555
-Current log-likelihood at step 14: -83693.197
-Current log-likelihood at step 15: -83690.201
-Current log-likelihood at step 16: -83687.164
-Current log-likelihood at step 17: -83684.076
-Current log-likelihood at step 18: -83680.939
-Current log-likelihood at step 19: -83677.747
-Current log-likelihood at step 20: -83674.501
-Current log-likelihood at step 21: -83671.194
-Current log-likelihood at step 22: -83667.828
-Current log-likelihood at step 23: -83664.398
-Current log-likelihood at step 24: -83660.900
-Current log-likelihood at step 25: -83657.335
-Current log-likelihood at step 26: -83653.696
-Current log-likelihood at step 27: -83649.982
-Current log-likelihood at step 28: -83646.189
-Current log-likelihood at step 29: -83642.312
-Current log-likelihood at step 30: -83638.347
-Current log-likelihood at step 31: -83634.291
-Current log-likelihood at step 32: -83630.138
-Current log-likelihood at step 33: -83625.882
-Current log-likelihood at step 34: -83621.521
-Current log-likelihood at step 35: -83617.047
-Current log-likelihood at step 36: -83612.455
-Current log-likelihood at step 37: -83607.738
-Current log-likelihood at step 38: -83602.889
-Current log-likelihood at step 39: -83597.901
-Current log-likelihood at step 40: -83592.767
-Current log-likelihood at step 41: -83587.485
-Current log-likelihood at step 42: -83582.051
-Current log-likelihood at step 43: -83576.443
-Current log-likelihood at step 44: -83570.650
-Current log-likelihood at step 45: -83564.659
-Current log-likelihood at step 46: -83558.451
-Current log-likelihood at step 47: -83552.011
-Current log-likelihood at step 48: -83545.317
-Current log-likelihood at step 49: -83538.347
-Current log-likelihood at step 50: -83531.069
-Current log-likelihood at step 51: -83523.452
-Current log-likelihood at step 52: -83515.458
-Current log-likelihood at step 53: -83507.036
-Current log-likelihood at step 54: -83498.132
-Current log-likelihood at step 55: -83488.676
-Current log-likelihood at step 56: -83478.587
-Current log-likelihood at step 57: -83467.767
-Current log-likelihood at step 58: -83456.114
-Current log-likelihood at step 59: -83414.292
-Current log-likelihood at step 60: -83351.082
-Current log-likelihood at step 61: -83313.726
-Current log-likelihood at step 62: -83311.126
-Current log-likelihood at step 63: -83308.498
-Current log-likelihood at step 64: -83305.745
-Current log-likelihood at step 65: -83301.816
-Current log-likelihood at step 66: -83298.551
-Current log-likelihood at step 67: -83201.399
-Current log-likelihood at step 68: -83201.064
-Current log-likelihood at step 69: -83200.925
-Current log-likelihood at step 70: -83200.802
-Current log-likelihood at step 71: -83200.685
-Current log-likelihood at step 72: -83200.574
-Current log-likelihood at step 73: -83200.463
-Current log-likelihood at step 74: -83200.354
-Current log-likelihood at step 75: -83200.247
-Current log-likelihood at step 76: -83200.139
-Current log-likelihood at step 77: -83200.031
-Current log-likelihood at step 78: -83199.922
-Current log-likelihood at step 79: -83199.813
-Current log-likelihood at step 80: -83199.704
-Current log-likelihood at step 81: -83199.595
-Current log-likelihood at step 82: -83199.486
-Current log-likelihood at step 83: -83199.377
-Current log-likelihood at step 84: -83199.268
-Current log-likelihood at step 85: -83199.157
-Current log-likelihood at step 86: -83199.047
-Current log-likelihood at step 87: -83198.938
-Current log-likelihood at step 88: -83198.827
-Current log-likelihood at step 89: -83198.718
-Current log-likelihood at step 90: -83198.608
-Current log-likelihood at step 91: -83198.498
-Current log-likelihood at step 92: -83198.389
-Current log-likelihood at step 93: -83198.279
-Current log-likelihood at step 94: -83198.170
-Current log-likelihood at step 95: -83198.061
-Current log-likelihood at step 96: -83197.953
-Current log-likelihood at step 97: -83197.844
-Current log-likelihood at step 98: -83197.736
-Current log-likelihood at step 99: -83197.629
-Partition-specific rates:  0.246 0.512 1.023 0.554 0.265 0.273 0.228 0.390 0.439 1.609 0.661 2.825 2.520 0.796 2.756
-Parameters optimization took 99 rounds (57.613 sec)
+Initial log-likelihood: -98441.140
+Current log-likelihood at step 1: -84447.007
+Current log-likelihood at step 2: -84032.691
+Current log-likelihood at step 3: -83977.542
+Current log-likelihood at step 4: -83950.350
+Current log-likelihood at step 5: -83911.214
+Current log-likelihood at step 6: -83903.748
+Current log-likelihood at step 7: -83898.522
+Current log-likelihood at step 8: -83895.286
+Current log-likelihood at step 9: -83892.271
+Current log-likelihood at step 10: -83889.323
+Current log-likelihood at step 11: -83886.374
+Current log-likelihood at step 12: -83883.360
+Current log-likelihood at step 13: -83880.177
+Current log-likelihood at step 14: -83866.436
+Current log-likelihood at step 15: -83862.873
+Current log-likelihood at step 16: -83859.706
+Current log-likelihood at step 17: -83856.491
+Current log-likelihood at step 18: -83853.225
+Current log-likelihood at step 19: -83849.904
+Current log-likelihood at step 20: -83846.521
+Current log-likelihood at step 21: -83843.081
+Current log-likelihood at step 22: -83839.574
+Current log-likelihood at step 23: -83836.004
+Current log-likelihood at step 24: -83832.362
+Current log-likelihood at step 25: -83828.649
+Current log-likelihood at step 26: -83824.860
+Current log-likelihood at step 27: -83820.993
+Current log-likelihood at step 28: -83817.044
+Current log-likelihood at step 29: -83813.008
+Current log-likelihood at step 30: -83808.882
+Current log-likelihood at step 31: -83804.661
+Current log-likelihood at step 32: -83800.339
+Current log-likelihood at step 33: -83795.910
+Current log-likelihood at step 34: -83791.368
+Current log-likelihood at step 35: -83786.719
+Current log-likelihood at step 36: -83781.949
+Current log-likelihood at step 37: -83777.051
+Current log-likelihood at step 38: -83772.016
+Current log-likelihood at step 39: -83766.842
+Current log-likelihood at step 40: -83761.528
+Current log-likelihood at step 41: -83756.051
+Current log-likelihood at step 42: -83750.401
+Current log-likelihood at step 43: -83744.567
+Current log-likelihood at step 44: -83738.533
+Current log-likelihood at step 45: -83732.285
+Current log-likelihood at step 46: -83725.804
+Current log-likelihood at step 47: -83719.072
+Current log-likelihood at step 48: -83712.063
+Current log-likelihood at step 49: -83704.750
+Current log-likelihood at step 50: -83697.101
+Current log-likelihood at step 51: -83689.076
+Current log-likelihood at step 52: -83680.628
+Current log-likelihood at step 53: -83671.701
+Current log-likelihood at step 54: -83662.222
+Current log-likelihood at step 55: -83652.108
+Current log-likelihood at step 56: -83641.255
+Current log-likelihood at step 57: -83629.558
+Current log-likelihood at step 58: -83616.905
+Current log-likelihood at step 59: -83505.474
+Current log-likelihood at step 60: -83479.686
+Current log-likelihood at step 61: -83477.136
+Current log-likelihood at step 62: -83474.542
+Current log-likelihood at step 63: -83471.909
+Current log-likelihood at step 64: -83469.237
+Current log-likelihood at step 65: -83466.533
+Current log-likelihood at step 66: -83463.802
+Current log-likelihood at step 67: -83461.045
+Current log-likelihood at step 68: -83435.853
+Current log-likelihood at step 69: -83434.101
+Current log-likelihood at step 70: -83432.321
+Current log-likelihood at step 71: -83430.503
+Current log-likelihood at step 72: -83428.646
+Current log-likelihood at step 73: -83426.749
+Current log-likelihood at step 74: -83424.809
+Current log-likelihood at step 75: -83422.822
+Current log-likelihood at step 76: -83420.785
+Current log-likelihood at step 77: -83418.699
+Current log-likelihood at step 78: -83416.560
+Current log-likelihood at step 79: -83414.367
+Current log-likelihood at step 80: -83412.118
+Current log-likelihood at step 81: -83409.812
+Current log-likelihood at step 82: -83407.449
+Current log-likelihood at step 83: -83405.027
+Current log-likelihood at step 84: -83402.547
+Current log-likelihood at step 85: -83400.010
+Current log-likelihood at step 86: -83397.418
+Current log-likelihood at step 87: -83394.775
+Current log-likelihood at step 88: -83392.086
+Current log-likelihood at step 89: -83389.357
+Current log-likelihood at step 90: -83360.698
+Current log-likelihood at step 91: -83360.383
+Current log-likelihood at step 92: -83360.264
+Current log-likelihood at step 93: -83360.153
+Current log-likelihood at step 94: -83360.047
+Current log-likelihood at step 95: -83359.943
+Current log-likelihood at step 96: -83359.843
+Current log-likelihood at step 97: -83359.742
+Current log-likelihood at step 98: -83359.644
+Partition-specific rates:  0.235 0.523 1.033 0.557 0.239 0.265 0.225 0.376 0.443 1.635 0.684 2.824 2.494 0.810 2.754
+Parameters optimization took 97 rounds (55.344 sec)
 
 
 WARNING: Estimated model parameters are at boundary that can cause numerical instability!
 
 Wrote distance file to... 
 Computing ML distances based on estimated model parameters...
-Calculating distance matrix: done in 0.0094947 secs using 164.6% CPU
-Computing ML distances took 0.009931 sec (of wall-clock time) 0.015625 sec (of CPU time)
-Setting up auxiliary I and S matrices: done in 0.0004162 secs
-Constructing RapidNJ tree: done in 0.0013581 secs
-Computing RapidNJ tree took 0.001868 sec (of wall-clock time) 0.000000 sec (of CPU time)
-Log-likelihood of RapidNJ tree: -123065.182
+Calculating distance matrix: done in 0.006903 secs using 226.4% CPU
+Computing ML distances took 0.007237 sec (of wall-clock time) 0.015625 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 0.0004365 secs
+Constructing RapidNJ tree: done in 0.0012668 secs
+Computing RapidNJ tree took 0.001800 sec (of wall-clock time) 0.000000 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -123064.495
 --------------------------------------------------------------------
 |             INITIALIZING CANDIDATE TREE SET                      |
 --------------------------------------------------------------------
-Generating 98 parsimony trees... 9.238 second
-Computing log-likelihood of 98 initial trees ... 24.784 seconds
-Current best score: -83197.629
+Generating 98 parsimony trees... 8.726 second
+Computing log-likelihood of 98 initial trees ... 23.426 seconds
+Current best score: -83359.644
 
 Do NNI search on 20 best initial trees
-Optimizing NNI: done in 3.56717 secs using 100.3% CPU
+Optimizing NNI: done in 2.73175 secs using 100.1% CPU
 Estimate model parameters (epsilon = 0.100)
-Initial log-likelihood: -83022.497
-Current log-likelihood at step 1: -83021.332
-Current log-likelihood at step 2: -83021.126
-Current log-likelihood at step 3: -83020.988
-Current log-likelihood at step 4: -83020.859
-Current log-likelihood at step 5: -83020.738
-Current log-likelihood at step 6: -83020.621
-Current log-likelihood at step 7: -83020.507
-Current log-likelihood at step 8: -83020.396
-Current log-likelihood at step 9: -83020.287
-Current log-likelihood at step 10: -83020.179
-Current log-likelihood at step 11: -83020.072
-Current log-likelihood at step 12: -83019.967
-Current log-likelihood at step 13: -83019.861
-Current log-likelihood at step 14: -83019.756
-Current log-likelihood at step 15: -83019.652
-Current log-likelihood at step 16: -83019.548
-Current log-likelihood at step 17: -83019.446
-Current log-likelihood at step 18: -83019.343
-Current log-likelihood at step 19: -83019.241
-Current log-likelihood at step 20: -83019.140
-Current log-likelihood at step 21: -83019.040
-Current log-likelihood at step 22: -83018.940
-Parameters optimization took 21 rounds (11.943 sec)
+Initial log-likelihood: -83119.224
+Current log-likelihood at step 1: -83117.455
+Current log-likelihood at step 2: -83117.236
+Current log-likelihood at step 3: -83117.120
+Current log-likelihood at step 4: -83117.015
+Current log-likelihood at step 5: -83116.927
+Parameters optimization took 4 rounds (3.007 sec)
 
 
 WARNING: Estimated model parameters are at boundary that can cause numerical instability!
 
-BETTER TREE FOUND at iteration 1: -83018.940
-Optimizing NNI: done in 5.5494 secs using 99.39% CPU
-Optimizing NNI: done in 4.97916 secs using 99.79% CPU
+BETTER TREE FOUND at iteration 1: -83116.927
+Optimizing NNI: done in 4.83688 secs using 99.5% CPU
 Estimate model parameters (epsilon = 0.100)
-Initial log-likelihood: -83018.464
-Current log-likelihood at step 1: -83013.965
-Current log-likelihood at step 2: -83013.384
-Current log-likelihood at step 3: -83013.243
-Current log-likelihood at step 4: -83013.121
-Current log-likelihood at step 5: -83013.006
-Current log-likelihood at step 6: -83012.895
-Current log-likelihood at step 7: -83012.782
-Current log-likelihood at step 8: -83012.676
-Current log-likelihood at step 9: -83012.570
-Current log-likelihood at step 10: -83012.465
-Current log-likelihood at step 11: -83012.362
-Current log-likelihood at step 12: -83012.259
-Current log-likelihood at step 13: -83012.155
-Current log-likelihood at step 14: -83012.056
-Parameters optimization took 13 rounds (8.073 sec)
+Initial log-likelihood: -83073.214
+Current log-likelihood at step 1: -83071.129
+Current log-likelihood at step 2: -83070.892
+Current log-likelihood at step 3: -83070.788
+Current log-likelihood at step 4: -83070.695
+Parameters optimization took 3 rounds (2.521 sec)
 
 
 WARNING: Estimated model parameters are at boundary that can cause numerical instability!
 
-BETTER TREE FOUND at iteration 3: -83012.056
-Optimizing NNI: done in 4.95826 secs using 99.9% CPU
+BETTER TREE FOUND at iteration 2: -83070.695
+Optimizing NNI: done in 5.9474 secs using 100.1% CPU
+Optimizing NNI: done in 6.056 secs using 100.1% CPU
+Optimizing NNI: done in 4.89219 secs using 99.97% CPU
 Estimate model parameters (epsilon = 0.100)
-Initial log-likelihood: -83008.784
-Current log-likelihood at step 1: -83007.089
-Current log-likelihood at step 2: -83006.775
-Current log-likelihood at step 3: -83006.628
-Current log-likelihood at step 4: -83006.514
-Current log-likelihood at step 5: -83006.413
-Current log-likelihood at step 6: -83006.317
-Parameters optimization took 5 rounds (3.911 sec)
+Initial log-likelihood: -83007.458
+Current log-likelihood at step 1: -83006.186
+Current log-likelihood at step 2: -83006.022
+Current log-likelihood at step 3: -83005.926
+Parameters optimization took 2 rounds (1.873 sec)
 
 
 WARNING: Estimated model parameters are at boundary that can cause numerical instability!
 
-BETTER TREE FOUND at iteration 4: -83006.317
-Optimizing NNI: done in 5.53491 secs using 99.93% CPU
-Optimizing NNI: done in 5.93306 secs using 100.1% CPU
-Optimizing NNI: done in 5.40972 secs using 99.94% CPU
-Optimizing NNI: done in 6.44788 secs using 100.1% CPU
-Optimizing NNI: done in 8.66564 secs using 99.89% CPU
-Optimizing NNI: done in 5.58503 secs using 99.88% CPU
-Iteration 10 / LogL: -83033.080 / Time: 0h:2m:55s
-Optimizing NNI: done in 5.93763 secs using 100% CPU
+BETTER TREE FOUND at iteration 5: -83005.926
+Optimizing NNI: done in 6.26772 secs using 99.97% CPU
+Optimizing NNI: done in 4.79672 secs using 99.68% CPU
+Optimizing NNI: done in 6.25513 secs using 99.92% CPU
+Optimizing NNI: done in 4.75318 secs using 99.93% CPU
+Optimizing NNI: done in 5.83424 secs using 99.9% CPU
 Estimate model parameters (epsilon = 0.100)
-Initial log-likelihood: -83005.653
-Current log-likelihood at step 1: -83005.011
-Current log-likelihood at step 2: -83004.899
-Current log-likelihood at step 3: -83004.799
-Parameters optimization took 2 rounds (1.649 sec)
+Initial log-likelihood: -82977.558
+Current log-likelihood at step 1: -82976.634
+Current log-likelihood at step 2: -82976.488
+Current log-likelihood at step 3: -82976.401
+Parameters optimization took 2 rounds (1.839 sec)
 
 
 WARNING: Estimated model parameters are at boundary that can cause numerical instability!
 
-BETTER TREE FOUND at iteration 11: -83004.799
-Optimizing NNI: done in 5.5576 secs using 99.81% CPU
-Optimizing NNI: done in 6.56764 secs using 99.92% CPU
-Optimizing NNI: done in 7.89614 secs using 99.93% CPU
-Optimizing NNI: done in 5.53414 secs using 99.1% CPU
-Optimizing NNI: done in 5.21809 secs using 100% CPU
-Optimizing NNI: done in 7.09839 secs using 100.2% CPU
-Optimizing NNI: done in 5.33657 secs using 99.84% CPU
-Optimizing NNI: done in 5.95134 secs using 99.77% CPU
-Optimizing NNI: done in 5.71577 secs using 100.1% CPU
-Estimate model parameters (epsilon = 0.100)
-Initial log-likelihood: -83001.972
-Current log-likelihood at step 1: -83000.581
-Current log-likelihood at step 2: -83000.201
-Current log-likelihood at step 3: -83000.074
-Current log-likelihood at step 4: -82999.971
-Current log-likelihood at step 5: -82999.878
-Parameters optimization took 4 rounds (3.109 sec)
-
-
-WARNING: Estimated model parameters are at boundary that can cause numerical instability!
-
-BETTER TREE FOUND at iteration 20: -82999.878
-Iteration 20 / LogL: -82999.878 / Time: 0h:4m:0s
+BETTER TREE FOUND at iteration 10: -82976.401
+Iteration 10 / LogL: -82976.401 / Time: 0h:2m:31s
+Optimizing NNI: done in 6.09547 secs using 99.97% CPU
+Optimizing NNI: done in 4.85567 secs using 100.1% CPU
+Optimizing NNI: done in 4.39954 secs using 99.8% CPU
+Optimizing NNI: done in 5.00686 secs using 99.86% CPU
+Optimizing NNI: done in 5.41266 secs using 100.2% CPU
+Optimizing NNI: done in 4.98055 secs using 100.1% CPU
+Optimizing NNI: done in 5.85932 secs using 99.73% CPU
+Optimizing NNI: done in 6.9766 secs using 99.89% CPU
+Optimizing NNI: done in 5.38569 secs using 99.8% CPU
+Optimizing NNI: done in 4.92416 secs using 99.64% CPU
+Iteration 20 / LogL: -83076.308 / Time: 0h:3m:25s
 Finish initializing candidate tree set (20)
-Current best tree score: -82999.878 / CPU time: 180.676
+Current best tree score: -82976.401 / CPU time: 148.136
 Number of iterations: 20
 --------------------------------------------------------------------
 |               OPTIMIZING CANDIDATE TREE SET                      |
 --------------------------------------------------------------------
-Optimizing NNI: done in 3.77174 secs using 100.3% CPU
-Optimizing NNI: done in 4.34761 secs using 100.3% CPU
-Optimizing NNI: done in 3.54223 secs using 99.69% CPU
-Optimizing NNI: done in 3.92204 secs using 99.6% CPU
-Optimizing NNI: done in 3.62495 secs using 100% CPU
-Optimizing NNI: done in 3.86425 secs using 99.87% CPU
-Optimizing NNI: done in 4.07456 secs using 100.1% CPU
-Optimizing NNI: done in 2.89784 secs using 100.3% CPU
-Optimizing NNI: done in 3.97651 secs using 99.8% CPU
+Optimizing NNI: done in 3.37931 secs using 99.41% CPU
+Optimizing NNI: done in 3.04366 secs using 99.59% CPU
+Optimizing NNI: done in 3.85882 secs using 100% CPU
+Optimizing NNI: done in 4.02187 secs using 100.2% CPU
+Optimizing NNI: done in 3.99976 secs using 99.62% CPU
+Optimizing NNI: done in 3.96094 secs using 99.8% CPU
+Optimizing NNI: done in 3.34036 secs using 100.1% CPU
+Optimizing NNI: done in 3.38889 secs using 100.1% CPU
+Optimizing NNI: done in 3.51575 secs using 100% CPU
 Estimate model parameters (epsilon = 0.100)
-Initial log-likelihood: -82988.789
-Current log-likelihood at step 1: -82987.623
-Current log-likelihood at step 2: -82987.385
-Current log-likelihood at step 3: -82987.279
-Current log-likelihood at step 4: -82987.189
-Parameters optimization took 3 rounds (2.316 sec)
+Initial log-likelihood: -82974.303
+Current log-likelihood at step 1: -82973.392
+Current log-likelihood at step 2: -82973.157
+Current log-likelihood at step 3: -82972.990
+Current log-likelihood at step 4: -82972.879
+Current log-likelihood at step 5: -82972.786
+Parameters optimization took 4 rounds (2.895 sec)
 
 
 WARNING: Estimated model parameters are at boundary that can cause numerical instability!
 
-BETTER TREE FOUND at iteration 29: -82987.189
-Optimizing NNI: done in 3.90434 secs using 100% CPU
+BETTER TREE FOUND at iteration 29: -82972.786
+Optimizing NNI: done in 3.71685 secs using 99.63% CPU
+Iteration 30 / LogL: -82979.145 / Time: 0h:4m:5s (0h:13m:57s left)
+Optimizing NNI: done in 4.01541 secs using 100% CPU
+Optimizing NNI: done in 4.17692 secs using 99.88% CPU
+Optimizing NNI: done in 3.36454 secs using 99.85% CPU
+Optimizing NNI: done in 3.733 secs using 100% CPU
 Estimate model parameters (epsilon = 0.100)
-Initial log-likelihood: -82975.882
-Current log-likelihood at step 1: -82975.178
-Current log-likelihood at step 2: -82974.928
-Current log-likelihood at step 3: -82974.777
-Current log-likelihood at step 4: -82974.635
-Current log-likelihood at step 5: -82974.511
-Current log-likelihood at step 6: -82974.408
-Current log-likelihood at step 7: -82974.320
-Parameters optimization took 6 rounds (4.140 sec)
+Initial log-likelihood: -82969.335
+Current log-likelihood at step 1: -82968.314
+Current log-likelihood at step 2: -82968.127
+Current log-likelihood at step 3: -82968.037
+Parameters optimization took 2 rounds (1.584 sec)
 
 
 WARNING: Estimated model parameters are at boundary that can cause numerical instability!
 
-BETTER TREE FOUND at iteration 30: -82974.320
-Iteration 30 / LogL: -82974.320 / Time: 0h:4m:45s (0h:16m:25s left)
-Optimizing NNI: done in 3.38225 secs using 99.79% CPU
+BETTER TREE FOUND at iteration 34: -82968.037
+Optimizing NNI: done in 3.70845 secs using 100.3% CPU
+Optimizing NNI: done in 4.16379 secs using 99.82% CPU
+Optimizing NNI: done in 3.55089 secs using 99.45% CPU
+Optimizing NNI: done in 3.6338 secs using 100.2% CPU
 Estimate model parameters (epsilon = 0.100)
-Initial log-likelihood: -82967.013
-Current log-likelihood at step 1: -82966.636
-Current log-likelihood at step 2: -82966.536
-Parameters optimization took 1 rounds (1.399 sec)
+Initial log-likelihood: -82963.893
+Current log-likelihood at step 1: -82963.625
+Current log-likelihood at step 2: -82963.516
+Current log-likelihood at step 3: -82963.431
+Parameters optimization took 2 rounds (1.538 sec)
 
 
 WARNING: Estimated model parameters are at boundary that can cause numerical instability!
 
-BETTER TREE FOUND at iteration 31: -82966.536
-Optimizing NNI: done in 3.97622 secs using 99.81% CPU
-Optimizing NNI: done in 3.56794 secs using 99.85% CPU
-Optimizing NNI: done in 4.0098 secs using 100.1% CPU
-Optimizing NNI: done in 4.14694 secs using 99.47% CPU
-Optimizing NNI: done in 4.00972 secs using 100.1% CPU
-Optimizing NNI: done in 3.71908 secs using 99.99% CPU
-Optimizing NNI: done in 4.30659 secs using 99.77% CPU
-Optimizing NNI: done in 4.13929 secs using 99.65% CPU
+BETTER TREE FOUND at iteration 38: -82963.431
+Optimizing NNI: done in 3.17954 secs using 99.76% CPU
+Optimizing NNI: done in 3.52904 secs using 100.1% CPU
+Iteration 40 / LogL: -82977.021 / Time: 0h:4m:46s (0h:11m:58s left)
+Optimizing NNI: done in 3.73636 secs using 99.53% CPU
+Optimizing NNI: done in 3.32735 secs using 99.55% CPU
+Optimizing NNI: done in 3.5613 secs using 100% CPU
 Estimate model parameters (epsilon = 0.100)
-Initial log-likelihood: -82963.677
-Current log-likelihood at step 1: -82963.404
-Current log-likelihood at step 2: -82963.316
-Parameters optimization took 1 rounds (1.228 sec)
+Initial log-likelihood: -82955.120
+Current log-likelihood at step 1: -82954.797
+Current log-likelihood at step 2: -82954.691
+Current log-likelihood at step 3: -82954.621
+Parameters optimization took 2 rounds (1.482 sec)
 
 
 WARNING: Estimated model parameters are at boundary that can cause numerical instability!
 
-BETTER TREE FOUND at iteration 39: -82963.316
-Optimizing NNI: done in 3.61809 secs using 100.2% CPU
-Iteration 40 / LogL: -82975.880 / Time: 0h:5m:28s (0h:13m:52s left)
-Optimizing NNI: done in 4.05835 secs using 100.1% CPU
-Optimizing NNI: done in 3.93375 secs using 100.1% CPU
-Optimizing NNI: done in 3.67312 secs using 99.97% CPU
-Optimizing NNI: done in 3.55346 secs using 99.81% CPU
-Optimizing NNI: done in 3.3283 secs using 99.99% CPU
+BETTER TREE FOUND at iteration 43: -82954.621
+Optimizing NNI: done in 3.51649 secs using 99.98% CPU
+Optimizing NNI: done in 3.39321 secs using 100.4% CPU
 Estimate model parameters (epsilon = 0.100)
-Initial log-likelihood: -82960.779
-Current log-likelihood at step 1: -82960.577
-Current log-likelihood at step 2: -82960.486
-Parameters optimization took 1 rounds (1.060 sec)
+Initial log-likelihood: -82953.983
+Current log-likelihood at step 1: -82951.896
+Current log-likelihood at step 2: -82951.627
+Current log-likelihood at step 3: -82951.536
+Parameters optimization took 2 rounds (1.576 sec)
 
 
 WARNING: Estimated model parameters are at boundary that can cause numerical instability!
 
-BETTER TREE FOUND at iteration 45: -82960.486
-Optimizing NNI: done in 4.03209 secs using 99.2% CPU
-Optimizing NNI: done in 3.04373 secs using 100.1% CPU
-Optimizing NNI: done in 2.8362 secs using 99.72% CPU
-Optimizing NNI: done in 3.37571 secs using 99.52% CPU
-Optimizing NNI: done in 3.34007 secs using 100.1% CPU
-Iteration 50 / LogL: -83034.514 / Time: 0h:6m:4s (0h:11m:47s left)
-Log-likelihood cutoff on original alignment: -83086.187
-Optimizing NNI: done in 3.55826 secs using 100.1% CPU
-Optimizing NNI: done in 3.80098 secs using 100.3% CPU
-Optimizing NNI: done in 3.12441 secs using 100% CPU
-Optimizing NNI: done in 2.79063 secs using 99.66% CPU
-Optimizing NNI: done in 3.2438 secs using 100.2% CPU
-Optimizing NNI: done in 3.29386 secs using 100.1% CPU
-Optimizing NNI: done in 3.60114 secs using 99.79% CPU
-Optimizing NNI: done in 3.43212 secs using 99.7% CPU
-Optimizing NNI: done in 3.37464 secs using 100% CPU
-Optimizing NNI: done in 3.72109 secs using 99.94% CPU
-Iteration 60 / LogL: -82971.734 / Time: 0h:6m:39s (0h:9m:36s left)
-Optimizing NNI: done in 3.11499 secs using 99.82% CPU
-Optimizing NNI: done in 3.04576 secs using 99.52% CPU
-Optimizing NNI: done in 3.01553 secs using 100% CPU
-Optimizing NNI: done in 3.32474 secs using 99.63% CPU
-Optimizing NNI: done in 3.68481 secs using 99.65% CPU
-Optimizing NNI: done in 3.17477 secs using 100.4% CPU
-Optimizing NNI: done in 3.05143 secs using 99.85% CPU
-Optimizing NNI: done in 3.08351 secs using 99.83% CPU
-Optimizing NNI: done in 3.50947 secs using 99.73% CPU
-Optimizing NNI: done in 3.61983 secs using 100.1% CPU
-Iteration 70 / LogL: -82964.433 / Time: 0h:7m:13s (0h:7m:50s left)
-Optimizing NNI: done in 3.46547 secs using 99.64% CPU
-Optimizing NNI: done in 3.136 secs using 100.1% CPU
-Optimizing NNI: done in 3.15543 secs using 100% CPU
-Optimizing NNI: done in 3.92567 secs using 99.9% CPU
-Optimizing NNI: done in 3.6575 secs using 99.97% CPU
-Optimizing NNI: done in 2.77608 secs using 99.62% CPU
-Optimizing NNI: done in 3.3464 secs using 99.92% CPU
-Optimizing NNI: done in 3.10619 secs using 99.6% CPU
-Optimizing NNI: done in 3.84584 secs using 99.95% CPU
-Optimizing NNI: done in 3.94276 secs using 99.87% CPU
-Iteration 80 / LogL: -82973.472 / Time: 0h:7m:48s (0h:6m:25s left)
-Optimizing NNI: done in 4.18171 secs using 99.76% CPU
-Optimizing NNI: done in 3.38569 secs using 100.1% CPU
-Optimizing NNI: done in 3.2715 secs using 99.82% CPU
-Optimizing NNI: done in 3.54571 secs using 100% CPU
-Optimizing NNI: done in 3.1295 secs using 99.86% CPU
-Optimizing NNI: done in 3.02198 secs using 99.79% CPU
-Optimizing NNI: done in 3.40942 secs using 100.4% CPU
-Optimizing NNI: done in 3.26528 secs using 100% CPU
-Optimizing NNI: done in 2.91816 secs using 100.1% CPU
-Optimizing NNI: done in 3.32266 secs using 100.2% CPU
-Iteration 90 / LogL: -83106.830 / Time: 0h:8m:22s (0h:5m:10s left)
-Optimizing NNI: done in 3.3622 secs using 100.4% CPU
-Optimizing NNI: done in 3.75152 secs using 99.96% CPU
-Optimizing NNI: done in 3.3822 secs using 99.79% CPU
-Optimizing NNI: done in 3.66905 secs using 99.65% CPU
-Optimizing NNI: done in 3.37868 secs using 99.89% CPU
-Optimizing NNI: done in 3.86792 secs using 100.2% CPU
-Optimizing NNI: done in 4.0025 secs using 99.94% CPU
-Optimizing NNI: done in 3.49564 secs using 100.1% CPU
-Optimizing NNI: done in 3.36419 secs using 99.86% CPU
-Optimizing NNI: done in 3.15834 secs using 99.93% CPU
-Iteration 100 / LogL: -82971.993 / Time: 0h:8m:58s (0h:4m:4s left)
-Log-likelihood cutoff on original alignment: -83077.703
-NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.997
-Optimizing NNI: done in 3.4133 secs using 100.3% CPU
-Optimizing NNI: done in 3.40809 secs using 99.95% CPU
-Optimizing NNI: done in 2.78656 secs using 99.81% CPU
-Optimizing NNI: done in 4.45097 secs using 100% CPU
-Optimizing NNI: done in 3.19214 secs using 99.85% CPU
-Optimizing NNI: done in 3.26611 secs using 99.99% CPU
-Optimizing NNI: done in 3.91872 secs using 100.1% CPU
-Optimizing NNI: done in 3.28414 secs using 100.4% CPU
-Optimizing NNI: done in 3.63324 secs using 100.2% CPU
-Optimizing NNI: done in 3.08045 secs using 100.4% CPU
-Iteration 110 / LogL: -82969.385 / Time: 0h:9m:33s (0h:7m:53s left)
-Optimizing NNI: done in 3.25299 secs using 99.91% CPU
-Optimizing NNI: done in 3.29863 secs using 99.95% CPU
-Optimizing NNI: done in 3.86914 secs using 100.2% CPU
-Optimizing NNI: done in 3.75632 secs using 100.2% CPU
-Optimizing NNI: done in 3.11604 secs using 100.3% CPU
-Optimizing NNI: done in 3.54155 secs using 100.2% CPU
-Optimizing NNI: done in 3.28822 secs using 99.79% CPU
-Optimizing NNI: done in 3.18849 secs using 99.97% CPU
-Optimizing NNI: done in 3.62957 secs using 99.87% CPU
-Optimizing NNI: done in 3.56789 secs using 99.85% CPU
-Iteration 120 / LogL: -82969.119 / Time: 0h:10m:8s (0h:6m:49s left)
-Optimizing NNI: done in 2.86154 secs using 99.92% CPU
-Optimizing NNI: done in 3.07415 secs using 99.62% CPU
-Optimizing NNI: done in 3.68473 secs using 100.1% CPU
-Optimizing NNI: done in 3.11599 secs using 99.79% CPU
-Optimizing NNI: done in 3.08125 secs using 99.9% CPU
-Optimizing NNI: done in 3.76073 secs using 99.71% CPU
-Optimizing NNI: done in 3.23369 secs using 99.05% CPU
-Optimizing NNI: done in 4.21041 secs using 99.83% CPU
-Optimizing NNI: done in 2.97116 secs using 99.92% CPU
-Optimizing NNI: done in 2.69496 secs using 99.72% CPU
-Iteration 130 / LogL: -82967.771 / Time: 0h:10m:41s (0h:5m:48s left)
-Optimizing NNI: done in 4.26324 secs using 100.1% CPU
-Optimizing NNI: done in 3.35538 secs using 99.65% CPU
-Optimizing NNI: done in 3.32575 secs using 100.1% CPU
-Optimizing NNI: done in 3.33768 secs using 99.25% CPU
-Optimizing NNI: done in 3.21659 secs using 100.1% CPU
-Optimizing NNI: done in 3.70932 secs using 100.3% CPU
-Optimizing NNI: done in 2.99428 secs using 99.67% CPU
-Optimizing NNI: done in 3.24838 secs using 100% CPU
-Optimizing NNI: done in 905.745 secs using 0.3692% CPU
-Optimizing NNI: done in 4.11181 secs using 99.56% CPU
-Iteration 140 / LogL: -82961.038 / Time: 0h:26m:19s (0h:11m:21s left)
-Optimizing NNI: done in 249.348 secs using 1.836% CPU
-Optimizing NNI: done in 3.7499 secs using 99.59% CPU
-Optimizing NNI: done in 3.70433 secs using 99.55% CPU
-Optimizing NNI: done in 3.54393 secs using 99.64% CPU
-Optimizing NNI: done in 3.88363 secs using 100.2% CPU
-Optimizing NNI: done in 3.10033 secs using 99.79% CPU
-TREE SEARCH COMPLETED AFTER 146 ITERATIONS / Time: 0h:30m:47s
+BETTER TREE FOUND at iteration 45: -82951.536
+Optimizing NNI: done in 3.5463 secs using 100% CPU
+Optimizing NNI: done in 3.57159 secs using 99.75% CPU
+Optimizing NNI: done in 3.52156 secs using 99.39% CPU
+Optimizing NNI: done in 3.5655 secs using 99.92% CPU
+Optimizing NNI: done in 4.0567 secs using 100.1% CPU
+Iteration 50 / LogL: -82958.695 / Time: 0h:5m:25s (0h:10m:31s left)
+Log-likelihood cutoff on original alignment: -83059.773
+Optimizing NNI: done in 3.2528 secs using 99.91% CPU
+Optimizing NNI: done in 3.68054 secs using 99.76% CPU
+Optimizing NNI: done in 4.0145 secs using 100% CPU
+Optimizing NNI: done in 3.98965 secs using 99.87% CPU
+Optimizing NNI: done in 3.78549 secs using 99.89% CPU
+Optimizing NNI: done in 3.69164 secs using 100.3% CPU
+Optimizing NNI: done in 3.17308 secs using 99.96% CPU
+Optimizing NNI: done in 3.84547 secs using 99.96% CPU
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -82949.782
+Current log-likelihood at step 1: -82949.655
+Current log-likelihood at step 2: -82949.575
+Parameters optimization took 1 rounds (1.092 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+BETTER TREE FOUND at iteration 58: -82949.575
+Optimizing NNI: done in 3.50205 secs using 99.5% CPU
+Optimizing NNI: done in 3.43289 secs using 99.68% CPU
+Iteration 60 / LogL: -82951.976 / Time: 0h:6m:4s (0h:10m:4s left)
+Optimizing NNI: done in 3.63083 secs using 99.84% CPU
+Optimizing NNI: done in 3.75444 secs using 99.88% CPU
+Optimizing NNI: done in 3.24899 secs using 99.07% CPU
+Optimizing NNI: done in 3.48343 secs using 99.58% CPU
+Optimizing NNI: done in 3.56517 secs using 99.93% CPU
+Optimizing NNI: done in 3.26186 secs using 99.64% CPU
+Optimizing NNI: done in 3.33851 secs using 100.2% CPU
+Optimizing NNI: done in 3.64765 secs using 99.81% CPU
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -82946.592
+Current log-likelihood at step 1: -82946.256
+Current log-likelihood at step 2: -82946.130
+Current log-likelihood at step 3: -82946.038
+Parameters optimization took 2 rounds (1.536 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+BETTER TREE FOUND at iteration 68: -82946.038
+Optimizing NNI: done in 3.39676 secs using 99.82% CPU
+Optimizing NNI: done in 4.09487 secs using 99.97% CPU
+Iteration 70 / LogL: -82961.419 / Time: 0h:6m:41s (0h:9m:30s left)
+Optimizing NNI: done in 3.21519 secs using 99.62% CPU
+Optimizing NNI: done in 3.10445 secs using 100.2% CPU
+Optimizing NNI: done in 3.34342 secs using 100% CPU
+Optimizing NNI: done in 3.63252 secs using 99.79% CPU
+Optimizing NNI: done in 3.61099 secs using 99.96% CPU
+Optimizing NNI: done in 3.46651 secs using 100.1% CPU
+Optimizing NNI: done in 3.50264 secs using 99.92% CPU
+Optimizing NNI: done in 2.83251 secs using 99.85% CPU
+Optimizing NNI: done in 3.21825 secs using 100% CPU
+Optimizing NNI: done in 3.62277 secs using 99.63% CPU
+Iteration 80 / LogL: -82952.552 / Time: 0h:7m:15s (0h:8m:5s left)
+Optimizing NNI: done in 2.88453 secs using 99.67% CPU
+Optimizing NNI: done in 3.37491 secs using 100% CPU
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -82943.739
+Current log-likelihood at step 1: -82943.454
+Current log-likelihood at step 2: -82943.360
+Parameters optimization took 1 rounds (1.119 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+BETTER TREE FOUND at iteration 82: -82943.360
+Optimizing NNI: done in 3.24525 secs using 100.1% CPU
+Optimizing NNI: done in 3.19652 secs using 100.2% CPU
+Optimizing NNI: done in 3.42344 secs using 100.4% CPU
+Optimizing NNI: done in 3.5283 secs using 100.1% CPU
+Optimizing NNI: done in 3.18111 secs using 100.2% CPU
+Optimizing NNI: done in 2.9715 secs using 99.91% CPU
+Optimizing NNI: done in 3.4198 secs using 100.1% CPU
+Optimizing NNI: done in 3.15339 secs using 100.1% CPU
+Iteration 90 / LogL: -82945.377 / Time: 0h:7m:49s (0h:8m:5s left)
+Optimizing NNI: done in 3.29949 secs using 99.92% CPU
+Optimizing NNI: done in 3.12857 secs using 99.89% CPU
+Optimizing NNI: done in 3.86901 secs using 99.75% CPU
+Optimizing NNI: done in 2.81527 secs using 99.9% CPU
+Optimizing NNI: done in 3.839 secs using 99.31% CPU
+Optimizing NNI: done in 3.40632 secs using 100% CPU
+Optimizing NNI: done in 3.52406 secs using 100.2% CPU
+Optimizing NNI: done in 3.77302 secs using 100.2% CPU
+Optimizing NNI: done in 3.83173 secs using 100.3% CPU
+Optimizing NNI: done in 3.4008 secs using 99.7% CPU
+Iteration 100 / LogL: -82948.970 / Time: 0h:8m:25s (0h:6m:58s left)
+Log-likelihood cutoff on original alignment: -83059.773
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.988
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Optimizing NNI: done in 3.15698 secs using 99.98% CPU
+Optimizing NNI: done in 3.20328 secs using 100% CPU
+Optimizing NNI: done in 3.01203 secs using 100.1% CPU
+Optimizing NNI: done in 2.99237 secs using 99.73% CPU
+Optimizing NNI: done in 2.96005 secs using 100.3% CPU
+Optimizing NNI: done in 3.74503 secs using 99.3% CPU
+Optimizing NNI: done in 3.47113 secs using 99.48% CPU
+Optimizing NNI: done in 3.11245 secs using 99.9% CPU
+Optimizing NNI: done in 3.35508 secs using 100.1% CPU
+Optimizing NNI: done in 3.98469 secs using 99.99% CPU
+Iteration 110 / LogL: -83054.959 / Time: 0h:8m:59s (0h:7m:25s left)
+Optimizing NNI: done in 3.16629 secs using 99.68% CPU
+Optimizing NNI: done in 3.48723 secs using 99.92% CPU
+Optimizing NNI: done in 3.23858 secs using 99.87% CPU
+Optimizing NNI: done in 3.68951 secs using 99.95% CPU
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -82943.047
+Current log-likelihood at step 1: -82942.925
+Current log-likelihood at step 2: -82942.843
+Parameters optimization took 1 rounds (0.946 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+UPDATE BEST LOG-LIKELIHOOD: -82942.843
+Optimizing NNI: done in 3.36052 secs using 100.4% CPU
+Optimizing NNI: done in 3.63897 secs using 100% CPU
+Optimizing NNI: done in 3.30494 secs using 99.76% CPU
+Optimizing NNI: done in 3.06839 secs using 99.81% CPU
+Optimizing NNI: done in 3.67653 secs using 99.87% CPU
+Optimizing NNI: done in 3.931 secs using 100.2% CPU
+Iteration 120 / LogL: -82947.014 / Time: 0h:9m:35s (0h:6m:26s left)
+Optimizing NNI: done in 3.44059 secs using 100.4% CPU
+Optimizing NNI: done in 3.34218 secs using 100% CPU
+Optimizing NNI: done in 3.09807 secs using 100.4% CPU
+BETTER TREE FOUND at iteration 123: -82942.841
+Optimizing NNI: done in 4.1262 secs using 99.97% CPU
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -82942.036
+Current log-likelihood at step 1: -82941.551
+Current log-likelihood at step 2: -82941.470
+Parameters optimization took 1 rounds (1.270 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+BETTER TREE FOUND at iteration 124: -82941.470
+Optimizing NNI: done in 3.4831 secs using 99.59% CPU
+Optimizing NNI: done in 2.84826 secs using 99.84% CPU
+Optimizing NNI: done in 3.41466 secs using 99.75% CPU
+Optimizing NNI: done in 565.676 secs using 0.6905% CPU
+Optimizing NNI: done in 3.96428 secs using 99.32% CPU
+Optimizing NNI: done in 3.31913 secs using 100.3% CPU
+Iteration 130 / LogL: -82947.215 / Time: 0h:19m:34s (0h:14m:15s left)
+Optimizing NNI: done in 3.26453 secs using 99.55% CPU
+Optimizing NNI: done in 3.31518 secs using 99.45% CPU
+Optimizing NNI: done in 3.28909 secs using 99.76% CPU
+Optimizing NNI: done in 3.44941 secs using 99.2% CPU
+Optimizing NNI: done in 3.13756 secs using 100.1% CPU
+Optimizing NNI: done in 3.40355 secs using 100.1% CPU
+Optimizing NNI: done in 3.15708 secs using 99.97% CPU
+Optimizing NNI: done in 3.07935 secs using 99.96% CPU
+Optimizing NNI: done in 3.5907 secs using 100.1% CPU
+Optimizing NNI: done in 2.8739 secs using 100% CPU
+Iteration 140 / LogL: -82993.354 / Time: 0h:20m:7s (0h:12m:9s left)
+Optimizing NNI: done in 3.47524 secs using 99.81% CPU
+Optimizing NNI: done in 3.51353 secs using 100.1% CPU
+Optimizing NNI: done in 2.79226 secs using 99.61% CPU
+Optimizing NNI: done in 2.83479 secs using 100.3% CPU
+Optimizing NNI: done in 2.71715 secs using 100.1% CPU
+Optimizing NNI: done in 3.0306 secs using 100% CPU
+Optimizing NNI: done in 3.37822 secs using 99.9% CPU
+Optimizing NNI: done in 3.0425 secs using 100.1% CPU
+Optimizing NNI: done in 3.54208 secs using 100.1% CPU
+Optimizing NNI: done in 3.6669 secs using 100.1% CPU
+Iteration 150 / LogL: -82945.218 / Time: 0h:20m:39s (0h:10m:15s left)
+Log-likelihood cutoff on original alignment: -83059.773
+Optimizing NNI: done in 3.67211 secs using 99.99% CPU
+Optimizing NNI: done in 3.08262 secs using 98.84% CPU
+Optimizing NNI: done in 3.74066 secs using 99.41% CPU
+Optimizing NNI: done in 4.68093 secs using 99.14% CPU
+Optimizing NNI: done in 3.10324 secs using 100.2% CPU
+Optimizing NNI: done in 3.82432 secs using 99.28% CPU
+Optimizing NNI: done in 3.78723 secs using 99.43% CPU
+Optimizing NNI: done in 3.47955 secs using 100.1% CPU
+Optimizing NNI: done in 4.19396 secs using 99.1% CPU
+Optimizing NNI: done in 3.29414 secs using 98.66% CPU
+Iteration 160 / LogL: -82951.931 / Time: 0h:21m:18s (0h:8m:34s left)
+Optimizing NNI: done in 3.70765 secs using 100.3% CPU
+Optimizing NNI: done in 3.92504 secs using 99.52% CPU
+Optimizing NNI: done in 3.3898 secs using 98.64% CPU
+Optimizing NNI: done in 3.40784 secs using 99.95% CPU
+Optimizing NNI: done in 3.89478 secs using 97.49% CPU
+Optimizing NNI: done in 3.3193 secs using 98.38% CPU
+Optimizing NNI: done in 3.72252 secs using 97.38% CPU
+Optimizing NNI: done in 3.54491 secs using 99.17% CPU
+Optimizing NNI: done in 3.37097 secs using 100.1% CPU
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -82941.384
+Current log-likelihood at step 1: -82940.886
+Current log-likelihood at step 2: -82940.794
+Parameters optimization took 1 rounds (1.261 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+BETTER TREE FOUND at iteration 169: -82940.794
+Optimizing NNI: done in 2.85313 secs using 99.67% CPU
+Iteration 170 / LogL: -82941.769 / Time: 0h:21m:55s (0h:12m:50s left)
+Optimizing NNI: done in 3.37851 secs using 99.9% CPU
+Optimizing NNI: done in 2.96184 secs using 100.2% CPU
+Optimizing NNI: done in 3.64651 secs using 100.3% CPU
+Optimizing NNI: done in 3.15586 secs using 100% CPU
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -82940.627
+Current log-likelihood at step 1: -82940.537
+Parameters optimization took 0 rounds (0.518 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+BETTER TREE FOUND at iteration 174: -82940.537
+Optimizing NNI: done in 2.91908 secs using 99.56% CPU
+Optimizing NNI: done in 3.49096 secs using 100.3% CPU
+Optimizing NNI: done in 2.99837 secs using 100.1% CPU
+Optimizing NNI: done in 3.04513 secs using 99.54% CPU
+Optimizing NNI: done in 3.21831 secs using 100% CPU
+Optimizing NNI: done in 3.39986 secs using 97.89% CPU
+Iteration 180 / LogL: -82940.537 / Time: 0h:22m:28s (0h:11m:48s left)
+Optimizing NNI: done in 4.29067 secs using 99.05% CPU
+Optimizing NNI: done in 3.32537 secs using 99.14% CPU
+Optimizing NNI: done in 4.8836 secs using 99.18% CPU
+Optimizing NNI: done in 3.56519 secs using 99.92% CPU
+Optimizing NNI: done in 3.20755 secs using 99.86% CPU
+Optimizing NNI: done in 3.03751 secs using 100.3% CPU
+Optimizing NNI: done in 3.38655 secs using 100.1% CPU
+Optimizing NNI: done in 2.91533 secs using 99.69% CPU
+Optimizing NNI: done in 3.55226 secs using 99.85% CPU
+Optimizing NNI: done in 2.99246 secs using 99.73% CPU
+Iteration 190 / LogL: -82958.718 / Time: 0h:23m:4s (0h:10m:15s left)
+Optimizing NNI: done in 3.03068 secs using 100% CPU
+Optimizing NNI: done in 3.35614 secs using 99.63% CPU
+Optimizing NNI: done in 3.37075 secs using 100.1% CPU
+Optimizing NNI: done in 2.62401 secs using 100% CPU
+Optimizing NNI: done in 3.43547 secs using 100.1% CPU
+Optimizing NNI: done in 3.02163 secs using 100.3% CPU
+Optimizing NNI: done in 3.18453 secs using 100.1% CPU
+Optimizing NNI: done in 3.37661 secs using 99.95% CPU
+Optimizing NNI: done in 3.33803 secs using 100.2% CPU
+Optimizing NNI: done in 2.99683 secs using 100.1% CPU
+Iteration 200 / LogL: -82943.768 / Time: 0h:23m:36s (0h:8m:46s left)
+Log-likelihood cutoff on original alignment: -83059.773
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.996
+Optimizing NNI: done in 3.2678 secs using 99.93% CPU
+Optimizing NNI: done in 2.87502 secs using 99.46% CPU
+Optimizing NNI: done in 2.95439 secs using 99.96% CPU
+Optimizing NNI: done in 3.55516 secs using 100.2% CPU
+Optimizing NNI: done in 3.873 secs using 100.1% CPU
+Optimizing NNI: done in 3.16984 secs using 100.1% CPU
+Optimizing NNI: done in 3.20864 secs using 99.34% CPU
+Optimizing NNI: done in 3.49989 secs using 99.11% CPU
+Optimizing NNI: done in 3.79235 secs using 100.1% CPU
+Optimizing NNI: done in 4.01967 secs using 99.9% CPU
+Iteration 210 / LogL: -82949.055 / Time: 0h:24m:11s (0h:10m:25s left)
+Optimizing NNI: done in 3.33261 secs using 99.87% CPU
+Optimizing NNI: done in 3.47795 secs using 98.84% CPU
+Optimizing NNI: done in 3.63678 secs using 98.82% CPU
+Optimizing NNI: done in 4.00734 secs using 100.2% CPU
+Optimizing NNI: done in 4.0015 secs using 98.79% CPU
+Optimizing NNI: done in 3.72459 secs using 97.33% CPU
+Optimizing NNI: done in 3.93902 secs using 99.96% CPU
+Optimizing NNI: done in 3.47434 secs using 99.84% CPU
+Optimizing NNI: done in 4.45079 secs using 99.7% CPU
+Optimizing NNI: done in 3.82531 secs using 100.1% CPU
+Iteration 220 / LogL: -82943.317 / Time: 0h:24m:50s (0h:9m:4s left)
+Optimizing NNI: done in 3.59818 secs using 99.88% CPU
+Optimizing NNI: done in 3.87797 secs using 99.52% CPU
+Optimizing NNI: done in 2.71244 secs using 100.2% CPU
+Optimizing NNI: done in 2.89115 secs using 99.98% CPU
+Optimizing NNI: done in 3.28171 secs using 99.99% CPU
+Optimizing NNI: done in 3.13367 secs using 100.2% CPU
+Optimizing NNI: done in 3.52842 secs using 100.1% CPU
+Optimizing NNI: done in 3.29842 secs using 99.95% CPU
+Optimizing NNI: done in 2.86687 secs using 99.74% CPU
+Optimizing NNI: done in 2.96373 secs using 100.2% CPU
+Iteration 230 / LogL: -82949.211 / Time: 0h:25m:23s (0h:7m:45s left)
+Optimizing NNI: done in 2.88476 secs using 100.2% CPU
+Optimizing NNI: done in 2.80234 secs using 99.8% CPU
+Optimizing NNI: done in 3.08714 secs using 100.2% CPU
+Optimizing NNI: done in 3.89256 secs using 99.95% CPU
+Optimizing NNI: done in 3.52765 secs using 98.33% CPU
+Optimizing NNI: done in 3.27245 secs using 99.79% CPU
+Optimizing NNI: done in 3.31338 secs using 99.5% CPU
+Optimizing NNI: done in 3.28049 secs using 99.55% CPU
+Optimizing NNI: done in 3.53241 secs using 99.52% CPU
+Optimizing NNI: done in 3.31218 secs using 100% CPU
+Iteration 240 / LogL: -82940.548 / Time: 0h:25m:56s (0h:6m:30s left)
+Optimizing NNI: done in 2.96286 secs using 98.62% CPU
+Optimizing NNI: done in 3.31086 secs using 100% CPU
+Optimizing NNI: done in 3.68827 secs using 99.13% CPU
+Optimizing NNI: done in 3.36753 secs using 100.2% CPU
+Optimizing NNI: done in 3.31524 secs using 99.92% CPU
+Optimizing NNI: done in 3.61586 secs using 99.82% CPU
+Optimizing NNI: done in 3.40406 secs using 100.1% CPU
+Optimizing NNI: done in 3.138 secs using 100.1% CPU
+Optimizing NNI: done in 3.2316 secs using 98.64% CPU
+Optimizing NNI: done in 3.78718 secs using 98.61% CPU
+Iteration 250 / LogL: -82942.350 / Time: 0h:26m:31s (0h:5m:19s left)
+Log-likelihood cutoff on original alignment: -83052.444
+Optimizing NNI: done in 2.80862 secs using 100.1% CPU
+Optimizing NNI: done in 2.84485 secs using 99.96% CPU
+Optimizing NNI: done in 3.18808 secs using 98.02% CPU
+Optimizing NNI: done in 3.03117 secs using 99.49% CPU
+Optimizing NNI: done in 3.54121 secs using 99.72% CPU
+Optimizing NNI: done in 3.71887 secs using 100% CPU
+Optimizing NNI: done in 3.38995 secs using 99.1% CPU
+Optimizing NNI: done in 3.14554 secs using 99.84% CPU
+Optimizing NNI: done in 3.8809 secs using 100.3% CPU
+Optimizing NNI: done in 3.52078 secs using 97.19% CPU
+Iteration 260 / LogL: -82984.905 / Time: 0h:27m:5s (0h:4m:11s left)
+Optimizing NNI: done in 3.23924 secs using 100.3% CPU
+Optimizing NNI: done in 3.37615 secs using 99.97% CPU
+Optimizing NNI: done in 2.79782 secs using 99.97% CPU
+Optimizing NNI: done in 3.8977 secs using 99.42% CPU
+Optimizing NNI: done in 3.49334 secs using 100.2% CPU
+Optimizing NNI: done in 2.95864 secs using 99.29% CPU
+Optimizing NNI: done in 3.69277 secs using 99.01% CPU
+Optimizing NNI: done in 2.81866 secs using 99.23% CPU
+Optimizing NNI: done in 3.35337 secs using 100.2% CPU
+Optimizing NNI: done in 3.04932 secs using 98.38% CPU
+Iteration 270 / LogL: -82942.893 / Time: 0h:27m:38s (0h:3m:4s left)
+Optimizing NNI: done in 3.06694 secs using 99.86% CPU
+Optimizing NNI: done in 3.09909 secs using 99.83% CPU
+Optimizing NNI: done in 2.93624 secs using 100% CPU
+Optimizing NNI: done in 3.69329 secs using 97.3% CPU
+Optimizing NNI: done in 3.50496 secs using 99.86% CPU
+TREE SEARCH COMPLETED AFTER 275 ITERATIONS / Time: 0h:27m:55s
 
 --------------------------------------------------------------------
 |                    FINALIZING TREE SEARCH                        |
 --------------------------------------------------------------------
 Performs final model parameters optimization
 Estimate model parameters (epsilon = 0.010)
-Initial log-likelihood: -82960.486
-Current log-likelihood at step 1: -82960.401
-Current log-likelihood at step 2: -82960.322
-Current log-likelihood at step 3: -82960.243
-Current log-likelihood at step 4: -82960.165
-Current log-likelihood at step 5: -82960.087
-Current log-likelihood at step 6: -82960.012
-Current log-likelihood at step 7: -82959.936
-Current log-likelihood at step 8: -82959.863
-Current log-likelihood at step 9: -82959.789
-Current log-likelihood at step 10: -82959.716
-Current log-likelihood at step 11: -82959.644
-Current log-likelihood at step 12: -82959.573
-Current log-likelihood at step 13: -82959.502
-Current log-likelihood at step 14: -82959.433
-Current log-likelihood at step 15: -82959.363
-Current log-likelihood at step 16: -82959.295
-Current log-likelihood at step 17: -82959.227
-Current log-likelihood at step 18: -82959.160
-Current log-likelihood at step 19: -82959.094
-Current log-likelihood at step 20: -82959.029
-Current log-likelihood at step 21: -82958.963
-Current log-likelihood at step 22: -82958.898
-Current log-likelihood at step 23: -82958.835
-Current log-likelihood at step 24: -82958.772
-Current log-likelihood at step 25: -82958.709
-Current log-likelihood at step 26: -82958.647
-Current log-likelihood at step 27: -82958.586
-Current log-likelihood at step 28: -82958.525
-Current log-likelihood at step 29: -82958.465
-Current log-likelihood at step 30: -82958.406
-Current log-likelihood at step 31: -82958.347
-Current log-likelihood at step 32: -82958.288
-Current log-likelihood at step 33: -82958.230
-Current log-likelihood at step 34: -82958.173
-Current log-likelihood at step 35: -82958.116
-Current log-likelihood at step 36: -82958.060
-Current log-likelihood at step 37: -82958.004
-Current log-likelihood at step 38: -82957.949
-Current log-likelihood at step 39: -82957.894
-Current log-likelihood at step 40: -82957.840
-Current log-likelihood at step 41: -82957.786
-Current log-likelihood at step 42: -82957.733
-Current log-likelihood at step 43: -82957.678
-Current log-likelihood at step 44: -82957.625
-Current log-likelihood at step 45: -82957.573
-Current log-likelihood at step 46: -82957.522
-Current log-likelihood at step 47: -82957.471
-Current log-likelihood at step 48: -82957.421
-Current log-likelihood at step 49: -82957.370
-Current log-likelihood at step 50: -82957.320
-Current log-likelihood at step 51: -82957.271
-Current log-likelihood at step 52: -82957.222
-Current log-likelihood at step 53: -82957.173
-Current log-likelihood at step 54: -82957.125
-Current log-likelihood at step 55: -82957.077
-Current log-likelihood at step 56: -82957.030
-Current log-likelihood at step 57: -82956.983
-Current log-likelihood at step 58: -82956.936
-Current log-likelihood at step 59: -82956.890
-Current log-likelihood at step 60: -82956.844
-Current log-likelihood at step 61: -82956.798
-Current log-likelihood at step 62: -82956.753
-Current log-likelihood at step 63: -82956.708
-Current log-likelihood at step 64: -82956.663
-Current log-likelihood at step 65: -82956.614
-Current log-likelihood at step 66: -82956.570
-Current log-likelihood at step 67: -82956.526
-Current log-likelihood at step 68: -82956.482
-Current log-likelihood at step 69: -82956.439
-Current log-likelihood at step 70: -82956.396
-Current log-likelihood at step 71: -82956.353
-Current log-likelihood at step 72: -82956.311
-Current log-likelihood at step 73: -82956.268
-Current log-likelihood at step 74: -82956.226
-Current log-likelihood at step 75: -82956.185
-Current log-likelihood at step 76: -82956.143
-Current log-likelihood at step 77: -82956.102
-Current log-likelihood at step 78: -82956.061
-Current log-likelihood at step 79: -82956.020
-Current log-likelihood at step 80: -82955.980
-Current log-likelihood at step 81: -82955.939
-Current log-likelihood at step 82: -82955.899
-Current log-likelihood at step 83: -82955.859
-Current log-likelihood at step 84: -82955.819
-Current log-likelihood at step 85: -82955.779
-Current log-likelihood at step 86: -82955.740
-Current log-likelihood at step 87: -82955.701
-Current log-likelihood at step 88: -82955.662
-Current log-likelihood at step 89: -82955.623
-Current log-likelihood at step 90: -82955.584
-Current log-likelihood at step 91: -82955.546
-Current log-likelihood at step 92: -82955.507
-Current log-likelihood at step 93: -82955.469
-Current log-likelihood at step 94: -82955.430
-Current log-likelihood at step 95: -82955.392
-Current log-likelihood at step 96: -82955.354
-Current log-likelihood at step 97: -82955.316
-Current log-likelihood at step 98: -82955.279
-Current log-likelihood at step 99: -82955.241
-Partition-specific rates:  0.176 0.241 1.091 0.575 0.184 0.143 0.188 0.388 0.437 1.662 0.708 2.954 2.575 0.839 2.899
-Parameters optimization took 99 rounds (61.661 sec)
+Initial log-likelihood: -82940.537
+Current log-likelihood at step 1: -82940.458
+Current log-likelihood at step 2: -82940.388
+Current log-likelihood at step 3: -82940.314
+Current log-likelihood at step 4: -82940.238
+Current log-likelihood at step 5: -82940.168
+Current log-likelihood at step 6: -82940.100
+Current log-likelihood at step 7: -82940.030
+Current log-likelihood at step 8: -82939.961
+Current log-likelihood at step 9: -82939.893
+Current log-likelihood at step 10: -82939.826
+Current log-likelihood at step 11: -82939.760
+Current log-likelihood at step 12: -82939.694
+Current log-likelihood at step 13: -82939.628
+Current log-likelihood at step 14: -82939.564
+Current log-likelihood at step 15: -82939.500
+Current log-likelihood at step 16: -82939.436
+Current log-likelihood at step 17: -82939.373
+Current log-likelihood at step 18: -82939.310
+Current log-likelihood at step 19: -82939.248
+Current log-likelihood at step 20: -82939.187
+Current log-likelihood at step 21: -82939.126
+Current log-likelihood at step 22: -82939.065
+Current log-likelihood at step 23: -82939.005
+Current log-likelihood at step 24: -82938.946
+Current log-likelihood at step 25: -82938.887
+Current log-likelihood at step 26: -82938.829
+Current log-likelihood at step 27: -82938.772
+Current log-likelihood at step 28: -82938.714
+Current log-likelihood at step 29: -82938.658
+Current log-likelihood at step 30: -82938.602
+Current log-likelihood at step 31: -82938.546
+Current log-likelihood at step 32: -82938.486
+Current log-likelihood at step 33: -82938.431
+Current log-likelihood at step 34: -82938.377
+Current log-likelihood at step 35: -82938.324
+Current log-likelihood at step 36: -82938.270
+Current log-likelihood at step 37: -82938.217
+Current log-likelihood at step 38: -82938.165
+Current log-likelihood at step 39: -82938.113
+Current log-likelihood at step 40: -82938.061
+Current log-likelihood at step 41: -82938.010
+Current log-likelihood at step 42: -82937.959
+Current log-likelihood at step 43: -82937.909
+Current log-likelihood at step 44: -82937.859
+Current log-likelihood at step 45: -82937.809
+Current log-likelihood at step 46: -82937.760
+Current log-likelihood at step 47: -82937.711
+Current log-likelihood at step 48: -82937.663
+Current log-likelihood at step 49: -82937.615
+Current log-likelihood at step 50: -82937.568
+Current log-likelihood at step 51: -82937.520
+Current log-likelihood at step 52: -82937.473
+Current log-likelihood at step 53: -82937.427
+Current log-likelihood at step 54: -82937.381
+Current log-likelihood at step 55: -82937.335
+Current log-likelihood at step 56: -82937.290
+Current log-likelihood at step 57: -82937.245
+Current log-likelihood at step 58: -82937.201
+Current log-likelihood at step 59: -82937.156
+Current log-likelihood at step 60: -82937.112
+Current log-likelihood at step 61: -82937.069
+Current log-likelihood at step 62: -82937.025
+Current log-likelihood at step 63: -82936.982
+Current log-likelihood at step 64: -82936.940
+Current log-likelihood at step 65: -82936.897
+Current log-likelihood at step 66: -82936.855
+Current log-likelihood at step 67: -82936.813
+Current log-likelihood at step 68: -82936.772
+Current log-likelihood at step 69: -82936.731
+Current log-likelihood at step 70: -82936.690
+Current log-likelihood at step 71: -82936.649
+Current log-likelihood at step 72: -82936.609
+Current log-likelihood at step 73: -82936.569
+Current log-likelihood at step 74: -82936.529
+Current log-likelihood at step 75: -82936.490
+Current log-likelihood at step 76: -82936.450
+Current log-likelihood at step 77: -82936.412
+Current log-likelihood at step 78: -82936.373
+Current log-likelihood at step 79: -82936.334
+Current log-likelihood at step 80: -82936.296
+Current log-likelihood at step 81: -82936.258
+Current log-likelihood at step 82: -82936.220
+Current log-likelihood at step 83: -82936.182
+Current log-likelihood at step 84: -82936.145
+Current log-likelihood at step 85: -82936.107
+Current log-likelihood at step 86: -82936.070
+Current log-likelihood at step 87: -82936.034
+Current log-likelihood at step 88: -82935.997
+Current log-likelihood at step 89: -82935.961
+Current log-likelihood at step 90: -82935.924
+Current log-likelihood at step 91: -82935.880
+Current log-likelihood at step 92: -82935.834
+Current log-likelihood at step 93: -82935.784
+Current log-likelihood at step 94: -82935.738
+Current log-likelihood at step 95: -82935.693
+Current log-likelihood at step 96: -82935.649
+Current log-likelihood at step 97: -82935.604
+Current log-likelihood at step 98: -82935.561
+Current log-likelihood at step 99: -82935.517
+Partition-specific rates:  0.183 0.259 1.081 0.564 0.180 0.154 0.194 0.387 0.433 1.678 0.597 2.962 2.601 0.849 2.945
+Parameters optimization took 99 rounds (62.003 sec)
 
 
 WARNING: Estimated model parameters are at boundary that can cause numerical instability!
 
 Partition information was printed to nomerge08.nex.best_scheme.nex.best_model.nex
-BEST SCORE FOUND : -82955.241
+BEST SCORE FOUND : -82935.517
 Creating bootstrap support values...
 Split supports printed to NEXUS file nomerge08.nex.best_scheme.nex.splits.nex
-Total tree length: 6.495
+Total tree length: 6.450
 
-Total number of iterations: 146
-CPU time used for tree search: 639.516 sec (0h:10m:39s)
-Wall-clock time used for tree search: 1787.411 sec (0h:29m:47s)
-Total CPU time used: 762.141 sec (0h:12m:42s)
-Total wall-clock time used: 1909.888 sec (0h:31m:49s)
+Total number of iterations: 275
+CPU time used for tree search: 1053.406 sec (0h:17m:33s)
+Wall-clock time used for tree search: 1617.889 sec (0h:26m:57s)
+Total CPU time used: 1173.859 sec (0h:19m:33s)
+Total wall-clock time used: 1738.122 sec (0h:28m:58s)
 
 Computing bootstrap consensus tree...
 Reading input file nomerge08.nex.best_scheme.nex.splits.nex...
-241 taxa and 1080 splits.
+241 taxa and 962 splits.
 Consensus tree written to nomerge08.nex.best_scheme.nex.contree
 Reading input trees file nomerge08.nex.best_scheme.nex.contree
-Log-likelihood of consensus tree: -82955.258
+Log-likelihood of consensus tree: -82938.791
 
 Analysis results written to: 
   IQ-TREE report:                nomerge08.nex.best_scheme.nex.iqtree
@@ -887,19 +1061,19 @@ TREE 1
 Reading the tree ... 
 Collapse 3 (over 239) internal branches having branch length <= 0.000202
  (settable via option -l)
-Parameter to adjust variances was set to 0.00917 (settable via option -b)
+Parameter to adjust variances was set to 0.00915 (settable via option -b)
 Minimum branch length of time scaled tree (settable via option -u and -U): 0
 Estimating the root position on the branch defined by given outgroups ...
 
 *RESULTS:
 - Dating results:
- rate 0.0031922, tMRCA -29.1519 , objective function 0.524272
+ rate 0.00315102, tMRCA -29.4277 , objective function 0.461821
 
-TOTAL ELAPSED TIME: 0.009 seconds
+TOTAL ELAPSED TIME: 0.012 seconds
 LSD results written to:
   LSD report:                  nomerge08.nex.best_scheme.nex.timetree.lsd
   Time tree in nexus format:   nomerge08.nex.best_scheme.nex.timetree.nex
   Time tree in newick format:  nomerge08.nex.best_scheme.nex.timetree.nwk
 
 --- End phylogenetic dating ---
-Date and Time: Thu Mar 23 13:21:23 2023
+Date and Time: Thu Mar 23 14:06:36 2023
