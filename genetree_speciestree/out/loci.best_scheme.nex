@@ -1,0 +1,14 @@
+#nexus
+begin sets;
+  charset sia = 1-407;
+  charset bdnf = 408-924;
+  charset nxc = 925-1479;
+  charset cyb = 1480-1989;
+  charset nd4 = 1990-2475;
+  charpartition mymodels =
+    K2P+I+G4: sia,
+    K2P+I+G4: bdnf,
+    TPM2u+F+I+G4: nxc,
+    GTR+F+I+G4: cyb,
+    GTR+F+I+G4: nd4;
+end;
