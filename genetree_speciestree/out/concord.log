@@ -1,11 +1,11 @@
-IQ-TREE multicore version 2.1.2 COVID-edition for Windows 64-bit built Oct 22 2020
+IQ-TREE multicore version 2.1.2 COVID-edition for Mac OS X 64-bit built Oct 22 2020
 Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
 Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
 
-Host:    MSI (AVX512, FMA3, 15 GB RAM)
-Command: C:\Program Files\iqtree-2.1.2-Windows\bin\iqtree2.exe -t out/locicodon.treefile --gcf out/loci.treefile -s input/asterophryinae_20230305.phy --scf 100 --prefix out/concord
-Seed:    847969 (Using SPRNG - Scalable Parallel Random Number Generator)
-Time:    Sat Apr 01 00:46:47 2023
+Host:    Marguerites-MacBook-Pro.local (AVX2, FMA3, 16 GB RAM)
+Command: iqtree2 -t out/locicodon.treefile --gcf out/loci.treefile -s input/asterophryinae_20230305.phy --scf 100 --prefix out/concord -redo
+Seed:    107230 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sun Apr  2 14:28:52 2023
 Kernel:  AVX+FMA - 1 threads (16 CPU cores detected)
 
 HINT: Use -nt option to specify number of threads because your CPU has 16 cores!
@@ -264,11 +264,11 @@ Reading tree(s) file out/loci.treefile ...
 5 tree(s) loaded (0 rooted and 5 unrooted)
 Trees have different number of taxa
 Computing gene concordance factor...
-0.011 sec
+0.017 sec
 Computing site concordance factor...
-0.257 sec
+0.412 sec
 Tree with concordance factors written to out/concord.cf.tree
 Annotated tree (best viewed in FigTree) written to out/concord.cf.tree.nex
 Tree with branch IDs written to out/concord.cf.branch
 Concordance factors per branch printed to out/concord.cf.stat
-Date and Time: Sat Apr 01 00:46:48 2023
+Date and Time: Sun Apr  2 14:28:52 2023

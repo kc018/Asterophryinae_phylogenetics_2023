@@ -1,0 +1,8 @@
+#nexus
+begin sets;
+  charset nuc = 1-1479;
+  charset mito = 1480-2475;
+  charpartition mymodels =
+    TVMe+I+G4: nuc,
+    GTR+F+I+G4: mito;
+end;

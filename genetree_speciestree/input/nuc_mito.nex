@@ -1,0 +1,5 @@
+#nexus
+begin sets;
+	charset nuc = 1-1479;
+	charset mito = 1480-2475;
+end;
